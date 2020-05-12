@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW4</title>
+	<link rel="stylesheet" href='{% static "css/reset.css" %}'>
+	<link rel="stylesheet" href='{% static "css/html_css/hw4/hw4.css" %}'>
+	<script src="https://kit.fontawesome.com/f4f915fd64.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<div class="navigation_logo">
+				JOURNEY
+			</div>
+
+			<div class="navigation_greeting">
+			<div class="navigation_icons">
+				<div class="icon link icon_calculator"></div>
+				<div class="icon link icon_message"></div>
+				<div class="icon link icon_compas"></div>
+			</div>
+			<div class="btn_separator"></div>
+				<div>Welcome, <a class="link">Log In</a> or <a class="link">Sign Up</a></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="mainwindow">
+				<div class="mainwindow_greenblock"></div>
+				<div class="mainwindow_signupblock">
+					<div class="mainwindow_signupblock_signup">Sign Up</div>
+					<a href="#" class="mainwindow_signupblock_login link">Log In</a>
+				</div>
+				<div class="mainwindow_share">
+					<div class="mainwindow_separator_facebook-btn social_network_button">
+						<img src="{% static 'img/hw4/facebook1.png' %}" alt="">
+						<div class="btn_separator"></div>
+						<span class="sn_name">Facebook</span>
+					</div>
+					<div class="mainwindow_separator_google-btn social_network_button">
+						<img src="{% static 'img/hw4/G+.png' %}" alt="">
+						<div class="btn_separator"></div>
+						<span class="sn_name">Google</span>
+					</div>
+				</div>
+				<div class="mainwindow_separator">
+					<div class="horontal_separator"></div>
+					<div class="mainwindow_separator_orBlock">or</div>
+					<div class="horontal_separator"></div>
+				</div>
+				<div class="mainwindow_form">
+					<form class="mainwindow_form_post" action="#" method="post">
+						<input type="text" class="mainwindow_form_field" placeholder="First Name">
+						<input type="text" class="mainwindow_form_field" placeholder="Last Name">
+						<input type="email" class="mainwindow_form_field" placeholder="Email">
+						<input type="password" class="mainwindow_form_field" placeholder="Choose Password">
+						<input type="password" class="mainwindow_form_field" placeholder="Confirm Password">
+						<div class="terms">
+	
+							 <input type="checkbox" id="agree-terms" required>
+	                         <label for="agree-terms">Agree our <a href="#" class="nav-log-in-green">Terms&nbsp;&amp;&nbsp;Conditions</a>
+	                         </label>
+						</div>
+
+                         <input type="submit" value="Create Account">
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

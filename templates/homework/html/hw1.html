@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW1</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/html_css/hw1/hw1.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <nav class="navigation" style="align-items: center">
+        {#        nav hight 81#}
+
+        <a class="nav-link" href="#">HOME</a>
+        <a class="nav-link" href="#">PHOTOAPP</a>
+        <a class="nav-link" href="#">DESIGN</a>
+        <a class="nav-link" href="#">DOWNLOAD</a>
+
+    </nav>
+    <img src="{% static 'img/hw1/image.jpg' %}" width="100%" height="790px" alt="">
+    <div class="container-text">
+        <div class="content">
+            <div class="content__title">
+                Rappresent your life with a simple photo
+            </div>
+            <div class="content__text">
+                <p class="content_p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit est, ullamcorper a vestibulum
+                    eu, pulvinar ut orci. Donec gravida orci non suscipit consequat. Suspendisse ut dui sed tortor
+                    ultrices tempus. Phasellus dictum lectus ex, ut placerat massa pharetra at. Nullam felis dolor,
+                    volutpat nec congue eget, ornare vitae quam. In finibus urna vel molestie tempus. Duis et convallis
+                    odio, convallis porta eros. Curabitur vel leo turpis. Morbi consequat ante in odio varius hendrerit.
+                </p>
+                <br>
+                <p class="content_p">
+                    Vestibulum varius pretium mattis. Aliquam vulputate maximus est, quis euismod elit sodales placerat.
+                    Proin pretium arcu a odio consectetur, nec vestibulum nisi venenatis. Nulla eleifend nisi vel
+                    pretium aliquam. Cras ornare elementum vehicula. Curabitur at hendrerit nisl. Donec ligula mauris,
+                    commodo non diam et, aliquam aliquet lectus. Maecenas volutpat, nisl in consectetur condimentum,
+                    ligula mauris fringilla mauris, eu aliquet mauris ligula at orci. Cras efficitur non massa in
+                    auctor. Sed posuere leo quam, sed varius massa euismod sit amet. Proin vehicula egestas massa.
+                    Nullam tempus massa a elementum posuere. Nam ac velit ac purus vestibulum fringilla. Nunc a tortor
+                    posuere, ultrices nisi id, interdum risus. Donec laoreet tempus libero ut viverra. Proin dapibus
+                    magna vel urna ornare, et pretium metus facilisis.
+                </p>
+
+            </div>
+            <button class="btn">get started</button>
+
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            Copyright by phototime - all right reserved
+        </div>
+    </footer>
+</div>
+</body>
+</html>

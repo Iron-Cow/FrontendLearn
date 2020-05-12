@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index/index.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+<body>
+<div class="content">
+    <div class="cube_space" hidden>
+        <div class="cube">
+            <div class="cube_side top">top</div>
+            <div class="cube_side bottom">bottom</div>
+            <div class="cube_side left">left</div>
+            <div class="cube_side right">right</div>
+            <div class="cube_side front">front</div>
+            <div class="cube_side back">back</div>
+
+        </div>
+
+    </div>
+
+    <h1>Frontend homeworks:</h1>
+    <div class="container">
+        {% for hw in homework_list %}
+            <a class="homework_button" href="{% url 'html_task' hw %}">Task {{ hw }}
+                <span></span><span></span><span></span><span></span>
+            </a>
+        {% endfor %}
+    </div>
+
+ <div class="pyramid_space">
+        <div class="pyramid">
+            <div class="pyramid_side sideA">
+                <div class="triangleside1"></div>
+                <div class="triangleside2"></div>
+                <div class="triangleside3"></div>
+            </div>
+            <div class="pyramid_side sideB">
+                <div class="triangleside1"></div>
+                <div class="triangleside2"></div>
+                <div class="triangleside3"></div>
+            </div>
+            <div class="pyramid_side sideC">
+                <div class="triangleside1"></div>
+                <div class="triangleside2"></div>
+                <div class="triangleside3"></div>
+            </div>
+            <div class="pyramid_side sideD">
+                <div class="triangleside1"></div>
+                <div class="triangleside2"></div>
+                <div class="triangleside3"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

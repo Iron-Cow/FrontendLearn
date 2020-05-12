@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW3</title>
+	<link rel="stylesheet" href='{% static "css/reset.css" %}'>
+	<link rel="stylesheet" href='{% static "css/html_css/hw3/hw3.css" %}'>
+	<link rel="stylesheet" href="{% static 'css/html_css/hw2/8143.otf' %}">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<div class="logo_image"><img src="{% static 'img/hw3/logo.png'%}" alt=""></div>
+				<span class="logo_milan">MILAN</span><br>
+				<span class="logo_holidays">HOLIDAYS</span>
+			</div>
+			<div class="contacts">
+				<span class="contacts_email">tours@milanoholidays.com</span>
+				<br>
+				<span class="contacts_telephone">+39 338 709 0880</span>
+			</div>
+			<!-- .logo>.logo_image>img[src="{% static 'img/hw3/logo.png'%}"]^+span.logo_milan{MILAN}+span.logo_holidays{HOLIDAYS}^+.contacts>span.contacts_email{tours@milanoholidays.com}+span.contacts_telephone{+39 338 709 0880} -->
+		</header>
+
+		<div class="content">
+			<a href="#" class="content__card">
+				<div class="content__card_img">
+					<img src="{% static 'img/hw3/im1.png'%}" alt="">
+					<div class="content__card_hover">
+						<div class="content__card_hover_price">
+							<span class="content__card_hover_from">from</span>
+							<br>
+							<span class="content__card_hover_from-price">€50</span>
+						</div>
+						<div class="content__card_hover_details">View Details</div>
+					</div>
+				</div>
+				<div class="content__card_text">Shopping Tours</div>
+
+			</a>
+			<a href="#" class="content__card">
+				<div class="content__card_img">
+					<img src="{% static 'img/hw3/im2.png'%}" alt="">
+					<div class="content__card_hover">
+						<div class="content__card_hover_price">
+							<span class="content__card_hover_from">from</span>
+							<br>
+							<span class="content__card_hover_from-price">€50</span>
+						</div>
+						<div class="content__card_hover_details">View Details</div>
+					</div>
+				</div>
+				<div class="content__card_text">Sightseeing Tours</div>
+
+			</a>
+			<a href="#" class="content__card">
+				<div class="content__card_img">
+					<img src="{% static 'img/hw3/im3.png'%}" alt="">
+					<div class="content__card_hover">
+						<div class="content__card_hover_price">
+							<span class="content__card_hover_from">from</span>
+							<br>
+							<span class="content__card_hover_from-price">€50</span>
+						</div>
+						<div class="content__card_hover_details">View Details</div>
+					</div>
+				</div>
+				<div class="content__card_text">Food Tours</div>
+
+			</a>
+			<a href="#" class="content__card">
+				<div class="content__card_img">
+					<img src="{% static 'img/hw3/im4.png'%}" alt="">
+					<div class="content__card_hover">
+						<div class="content__card_hover_price">
+							<span class="content__card_hover_from">from</span>
+							<br>
+							<span class="content__card_hover_from-price">€50</span>
+						</div>
+						<div class="content__card_hover_details">View Details</div>
+					</div>
+				</div>
+				<div class="content__card_text">Bars & Nightlife</div>
+
+			</a>
+			<a href="#" class="content__card">
+				<div class="content__card_img">
+					<img src="{% static 'img/hw3/im5.png'%}" alt="">
+					<div class="content__card_hover">
+						<div class="content__card_hover_price">
+							<span class="content__card_hover_from">from</span>
+							<br>
+							<span class="content__card_hover_from-price">€50</span>
+						</div>
+						<div class="content__card_hover_details">View Details</div>
+					</div>
+				</div>
+				<div class="content__card_text">Art & Architecture</div>
+
+			</a>
+			<a href="#" class="content__card">
+				<div class="content__card_img">
+					<img src="{% static 'img/hw3/im6.png'%}" alt="">
+					<div class="content__card_hover">
+						<div class="content__card_hover_price">
+							<span class="content__card_hover_from">from</span>
+							<br>
+							<span class="content__card_hover_from-price">
+								€50
+							</span>
+						</div>
+						<div class="content__card_hover_details">
+							View Details</div>
+					</div>
+
+				</div>
+
+				<div class="content__card_text">Walking Tours</div>
+				
+			</a>
+		</div> 
+
+		<!-- .content>.content__card*6>.content__card_img>img^+.content__card_text+.content__card_hover>div.content__card_hover_price>span.content__card_hover_from{from}+br+span.content__card_hover_from-price{€50}^+div.content__card_hover_details{View Details} -->
+		<footer>
+			<div class="copyright">
+				© 2018 Copyright Milan Holidays, Inc. All rights reserved.
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

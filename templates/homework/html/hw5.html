@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW5</title>
+	<link rel="stylesheet" href='{% static "css/reset.css" %}'>
+	<link rel="stylesheet" href='{% static "css/html_css/hw5/hw5.css" %}'>
+	<link rel="stylesheet" href='{% static "css/html_css/hw5/hw5.1.css" %}'>
+	<script src="https://kit.fontawesome.com/f4f915fd64.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href='{% static "css/html_css/hw5/Arimo/Arimo-Regular.ttf" %}'>
+
+
+</head>
+<body>
+	<div class="container" >
+		<table class="table" >
+			<tr>
+				<th rowspan="2" class="logo_cell"><div class="small_letters">Choose your</div><div class="big_letters">pricing plan</div></th>
+				<th class="standard header_cell">standard</th>
+				<th class="ultimate header_cell">ultimate</th>
+				<th class="premium header_cell">premium</th>                
+			</tr>
+			<tr class="price_row">
+				<th class="price_cell">
+					<div class="big_price">$17</div>
+					<div class="rightprice">
+						<div class="small_price">.99</div>
+						<div class="permonth">Per Month</div>
+					</div>
+				</th>
+
+				<th class="price_cell">
+					<div class="big_price">$37</div>
+					<div class="rightprice">
+						<div class="small_price">.99</div>
+						<div class="permonth">Per Month</div>
+					</div>
+				</th>
+
+				<th class="price_cell">
+					<div class="big_price">$97</div>
+					<div class="rightprice">
+						<div class="small_price">.99</div>
+						<div class="permonth">Per Month</div>
+					</div>
+				</th>
+			</tr>
+			<tr class="content_raw">
+				<td class="content_cell_topic">
+					<i class="fas fa-archive"></i>Storage
+				</td>
+				<td class="content_cell_value">500GB Storage </td>
+				<td class="content_cell_value">1000GB Storage </td>
+				<td class="content_cell_value">2000GB Storage </td>
+			</tr>
+			<tr class="content_raw row_dark">
+				<td class="content_cell_topic">
+					<i class="fas fa-cloud-upload-alt"></i>Bandwidth
+				</td>
+				<td colspan="2" class="content_cell_value">limited</td>
+				<td class="content_cell_value">unlimited</td>
+			</tr>
+			<tr class="content_raw">
+				<td class="content_cell_topic">
+					<i class="fas fa-envelope"></i>Email
+				</td>
+				<td class="content_cell_value">25 emails</td>
+				<td class="content_cell_value">45 emails</td>
+				<td class="content_cell_value">65 emails</td>
+			</tr>
+			<tr class="content_raw row_dark">
+				<td class="content_cell_topic">
+					<i class="far fa-life-ring"></i>support
+				</td>
+				<td colspan="3" class="content_cell_value">24/7 support</td>
+			</tr>
+			<tr class="content_raw">
+				<td class="content_cell_topic">
+					<i class="fas fa-cube"></i>products
+				</td>
+				<td class="content_cell_value">20 products</td>
+				<td class="content_cell_value">30 products</td>
+				<td class="content_cell_value">60 products</td>
+			</tr>
+			<tr class="content_raw row_dark">
+				<td class="content_cell_topic">
+					<i class="fas fa-users"></i>users
+				</td>
+				<td class="content_cell_value">1 user</td>
+				<td class="content_cell_value">10 users</td>
+				<td class="content_cell_value">15 users</td>
+			</tr>
+			<tr class="button_row">
+				<td class="button_row_contacts">
+					<a href="#" class="footer_button footer_contacts_button">contact us<span class="button_underline"></span></a>
+				</td>
+				<td class="button_row_cell">
+					<a href="#" class="footer_button standard">buy now<span class="button_underline"></span></a>
+				</td>
+				<td class="button_row_cell">
+					<a href="#" class="footer_button ultimate">buy now<span class="button_underline"></span></a>
+				</td>
+				<td class="button_row_cell">
+					<a href="#" class="footer_button premium">buy now<span class="button_underline"></span></a>
+				</td>
+			</tr>
+
+
+	            <!-- (tr.content_raw>td.content_cell_topic+td.content_cell_value*3^tr.content_raw.row_dark>td.content_cell_topic+td.content_cell_value*3)*3
+	            -->
+	        </table>
+
+
+
+	        <table class="h_table" hidden="true">
+	        	<tr class="header_row">
+	        		<th class="header_logo_cell">
+	        			<p class="small_logo_h">
+	        				Choose your
+	        			</p>
+
+	        			<p class="big_logo_h">
+	        				pricing plan
+	        			</p>
+	        		</th>
+	        		<th class="header_category_cell">
+	        			<i class="fas fa-archive"></i><p>Storage</p>
+	        		</th>
+	        		<th class="header_category_cell">
+	        			<i class="fas fa-cloud-upload-alt"></i><p>Bandwidth</p>
+	        		</th>
+	        		<th class="header_category_cell">
+	        			<i class="far fa-life-ring"></i><p>support</p>
+	        		</th>
+	        		<th class="header_category_cell">
+	        			<i class="fas fa-envelope"></i><p>Email</p>
+	        		</th>
+	        		<th class="header_category_cell">
+	        			<i class="fas fa-cube"></i><p>products</p>
+	        		</th>
+	        		<th class="header_category_cell">
+	        			<i class="fas fa-users"></i><p>users</p>
+	        		</th>
+	        	</tr>
+	        	<tr class="content_row">
+	        		<td class="content_option_cell standard">
+	        			<div class="plan_name">standard</div>
+	        			<div class="h_price_line">
+	        				<div class="big_price_h">17</div>
+	        				<div class="small_price_h">.99</div>
+	        				<div class="per_month_h">per month</div>
+	        			</div>
+	        			<a href="" class="plan_btn">buy now<span class="button_underline"></span></a>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">500GB
+</p>
+	        			<p class="second_content_row">storage</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">limited
+</p>
+	        			<p class="second_content_row">bandwidth</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">25
+</p>
+	        			<p class="second_content_row">emails</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">24/7
+</p>
+	        			<p class="second_content_row">support</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">20
+</p>
+	        			<p class="second_content_row">products</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">1
+</p>
+	        			<p class="second_content_row">user</p>
+	        		</td>
+
+	        		
+	        	</tr>
+	        	<tr class="content_row">
+	        		<td class="content_option_cell ultimate">
+	        			<div class="plan_name">ultimate</div>
+	        			<div class="h_price_line">
+	        				<div class="big_price_h">37</div>
+	        				<div class="small_price_h">.99</div>
+	        				<div class="per_month_h">per month</div>
+	        			</div>
+	        			<a href="" class="plan_btn">buy now<span class="button_underline"></span></a>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">1000gb
+</p>
+	        			<p class="second_content_row">storage</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">limited
+</p>
+	        			<p class="second_content_row">bandwidth</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">45
+</p>
+	        			<p class="second_content_row">emails</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">24/7
+</p>
+	        			<p class="second_content_row">support</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">30
+</p>
+	        			<p class="second_content_row">products</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">10
+</p>
+	        			<p class="second_content_row">user</p>
+	        		</td>
+	        	</tr>
+	        	<tr class="content_row">
+	        		<td class="content_option_cell premium">
+	        			<div class="plan_name">premium</div>
+	        			<div class="h_price_line">
+	        				<div class="big_price_h">97</div>
+	        				<div class="small_price_h">.99</div>
+	        				<div class="per_month_h">per month</div>
+	        			</div>
+	        			<a href="" class="plan_btn">buy now<span class="button_underline"></span></a>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">2000GB
+</p>
+	        			<p class="second_content_row">storage</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">unlimited
+</p>
+	        			<p class="second_content_row">bandwidth</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">65
+</p>
+	        			<p class="second_content_row">emails</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">24/7
+</p>
+	        			<p class="second_content_row">support</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">60
+</p>
+	        			<p class="second_content_row">products</p>
+	        		</td>
+	        		<td class="content_value_cell">
+	        			<p class="first_content_row">15
+</p>
+	        			<p class="second_content_row">user</p>
+	        		</td>
+	        	</tr>
+	        </table>
+
+
+	    </div>
+		<div class="table_switcher">Switch table</div>
+		<script>
+			let ticker = 0;
+			let first_table = document.querySelector('.table');
+			let second_table = document.querySelector('.h_table');
+			let switcher = document.querySelector('.table_switcher');
+			switcher.addEventListener("click", function (){
+				if (ticker%2 !== 1){
+					first_table.setAttribute('hidden', 'true');
+					second_table.removeAttribute('hidden');
+				}else{
+					second_table.setAttribute('hidden', 'true');
+					first_table.removeAttribute('hidden');
+				};
+				ticker++;
+			});
+		</script>
+
+
+
+	</body>
+	</html>
