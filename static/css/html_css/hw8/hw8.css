@@ -11,7 +11,7 @@ a{
 	position: relative;
 	  overflow-y: scroll;
 	  overflow-x: hidden;
-    background-image: url('../../../img/hw8/bg1.jpg') ;
+    background-image: url('../../../img/html/hw8/bg1.jpg') ;
   	background-repeat: no-repeat;
   	background-size: cover;
   	background-attachment: fixed;
@@ -134,7 +134,7 @@ a{
 }
 
 .companies {
-	background-image: url('../../../img/hw8/bg2.jpg') ;
+	background-image: url('../../../img/html/hw8/bg2.jpg') ;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -208,7 +208,7 @@ text-align: center;
 
 
 .testinomianls {
-	background-image: url('../../../img/hw8/bg3.jpg') ;
+	background-image: url('../../../img/html/hw8/bg3.jpg') ;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;

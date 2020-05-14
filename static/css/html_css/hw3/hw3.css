@@ -12,7 +12,7 @@ font-weight: normal;
 	font-family: Verdana, sans-serif;
 	width: 1366px;
 	height: 768px;
-	background-image: url('../../../img/hw3/bg.png');
+	background-image: url('../../../img/html/hw3/bg.png');
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -178,7 +178,7 @@ header {
 	margin-left: 111px;
 }
 .content__card_hover_details:after {
-	content: url('../../../img/hw3/arrow.png');
+	content: url('../../../img/html/hw3/arrow.png');
 	width: 7px;
 	opacity: 0.5;
 	padding-left: 15px;

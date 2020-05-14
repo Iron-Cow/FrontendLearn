@@ -12,54 +12,67 @@
 </head>
 <body>
 <div class="content">
-    <div class="cube_space" hidden>
-        <div class="cube">
-            <div class="cube_side top">top</div>
-            <div class="cube_side bottom">bottom</div>
-            <div class="cube_side left">left</div>
-            <div class="cube_side right">right</div>
-            <div class="cube_side front">front</div>
-            <div class="cube_side back">back</div>
-
-        </div>
-
-    </div>
+{#    <div class="cube_space" hidden>#}
+{#        <div class="cube">#}
+{#            <div class="cube_side top">top</div>#}
+{#            <div class="cube_side bottom">bottom</div>#}
+{#            <div class="cube_side left">left</div>#}
+{#            <div class="cube_side right">right</div>#}
+{#            <div class="cube_side front">front</div>#}
+{#            <div class="cube_side back">back</div>#}
+{##}
+{#        </div>#}
+{##}
+{#    </div>#}
 
     <h1>Frontend homeworks:</h1>
+
+
+    <h2>HTML/CSS Tasks:</h2>
     <div class="container">
-        {% for hw in homework_list %}
+        {% for hw in homework_list_html %}
             <a class="homework_button" href="{% url 'html_task' hw %}">Task {{ hw }}
                 <span></span><span></span><span></span><span></span>
             </a>
         {% endfor %}
     </div>
 
- <div class="pyramid_space">
-        <div class="pyramid">
-            <div class="pyramid_side sideA">
-                <div class="triangleside1"></div>
-                <div class="triangleside2"></div>
-                <div class="triangleside3"></div>
-            </div>
-            <div class="pyramid_side sideB">
-                <div class="triangleside1"></div>
-                <div class="triangleside2"></div>
-                <div class="triangleside3"></div>
-            </div>
-            <div class="pyramid_side sideC">
-                <div class="triangleside1"></div>
-                <div class="triangleside2"></div>
-                <div class="triangleside3"></div>
-            </div>
-            <div class="pyramid_side sideD">
-                <div class="triangleside1"></div>
-                <div class="triangleside2"></div>
-                <div class="triangleside3"></div>
-            </div>
 
-        </div>
-
+    <h2>JS Tasks:</h2>
+    <div class="container">
+        {% for hw in homework_list_js %}
+            <a class="homework_button" href="{% url 'js_task' hw %}">Task {{ hw }}
+                <span></span><span></span><span></span><span></span>
+            </a>
+        {% endfor %}
     </div>
+
+{# <div class="pyramid_space">#}
+{#        <div class="pyramid">#}
+{#            <div class="pyramid_side sideA">#}
+{#                <div class="triangleside1"></div>#}
+{#                <div class="triangleside2"></div>#}
+{#                <div class="triangleside3"></div>#}
+{#            </div>#}
+{#            <div class="pyramid_side sideB">#}
+{#                <div class="triangleside1"></div>#}
+{#                <div class="triangleside2"></div>#}
+{#                <div class="triangleside3"></div>#}
+{#            </div>#}
+{#            <div class="pyramid_side sideC">#}
+{#                <div class="triangleside1"></div>#}
+{#                <div class="triangleside2"></div>#}
+{#                <div class="triangleside3"></div>#}
+{#            </div>#}
+{#            <div class="pyramid_side sideD">#}
+{#                <div class="triangleside1"></div>#}
+{#                <div class="triangleside2"></div>#}
+{#                <div class="triangleside3"></div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#    </div>#}
 
 
 </div>

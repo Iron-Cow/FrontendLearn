@@ -19,6 +19,18 @@ h1{
     font-size: 40px;
     color: cornsilk;
     text-align: center;
+    margin-bottom: 40px;
+    text-shadow: #14b9d5 1px 1px 10px;
+    font-family: 'Pacifico', cursive;
+    /*margin-top: 2rem;*/
+
+}
+
+
+h2{
+    font-size: 30px;
+    color: magenta;
+    text-align: center;
     margin-bottom: 10px;
     text-shadow: #14b9d5 1px 1px 10px;
     font-family: 'Pacifico', cursive;
@@ -51,6 +63,7 @@ h1{
     transition-delay: 0.2s;
     overflow: hidden;
     border-radius: 2px;
+    /*clip-path: polygon(33% 0%, 66% 0%, 100% 33%, 100% 66%,  66% 100%, 33% 100%, 0% 66%, 0% 33%);*/
 }
 
 .homework_button span{

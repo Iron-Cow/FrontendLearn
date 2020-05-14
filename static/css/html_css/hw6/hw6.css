@@ -3,7 +3,7 @@ body{
 }
 
 header{
-	background: url('../../../img/hw6/header-bg.jpeg') 0 -480px no-repeat fixed;
+	background: url('../../../img/html/hw6/header-bg.jpeg') 0 -480px no-repeat fixed;
 	
 }
 
@@ -164,7 +164,7 @@ header{
 .popular_clients {
 	width: 100%;
 	/*height: 588px;*/
-	background: url('../../../img/hw6/parallax-bg.jpeg') 0 -0 no-repeat fixed;
+	background: url('../../../img/html/hw6/parallax-bg.jpeg') 0 -0 no-repeat fixed;
 	color: #ffffff;
 	font-size: 32px;
 	font-weight: 700;
