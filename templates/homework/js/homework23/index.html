@@ -1,0 +1,124 @@
+{% extends 'homework/js/layout_for_js.html' %}
+{% load static %}
+
+{% block title %}{{ task_id }}{% endblock title %}
+
+{% block hw_number %}{{ task_id }}{% endblock hw_number %}
+
+{% block style %}
+{% endblock style %}
+
+{% block task_def %}
+    <script>
+        let div = document.createElement('div');
+        div.innerText += `{{ task_definition }}`;
+        let task_place = document.querySelector('.task_text');
+        task_place.append(div);
+    </script>
+{% endblock task_def %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/js_tasks/hw23/hw23.css' %}">
+<div id="slider" class="slider">
+    <div class="thumb"></div>
+</div>
+    <div class="gamenavigation_panel">
+        <div class="table_size gamenavigation">
+            <span>8</span>
+        </div>
+        <div class="bombs_number gamenavigation"><span>10</span> 💣</div>
+        <div class="bombs_left_section gamenavigation">
+            <div><span class="bombs_left">10</span><span class="bombs_from">/10</span></div>
+            <div><span>bombs left</span></div>
+        </div>
+        <div class="new_game gamenavigation button">
+            New game
+        </div>
+    </div>
+
+
+
+    <div class="minesweeper_board">
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+        <div class="minesweeper_row">
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+            <div class="minesweeper_cell"></div>
+        </div>
+    <div class="game-result">You won!</div>
+    </div>
+{% endblock content %}

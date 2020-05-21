@@ -1,49 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework-buttons</title>
-    <style>
-      .password-form {
+
+{% extends 'homework/js/layout_for_js.html' %}
+
+{% block title %}{{ task_id }}{% endblock title %}
+
+{% block hw_number %}{{ task_id }}{% endblock hw_number %}
+
+{% block style %}
+
+    i{
+        color: gray;
+    }
+    .password-form {
         display: flex;
         flex-direction: column;
-      }
-      .input-wrapper {
-        position: relative;
-				width: intrinsic;       
-			  width: -moz-max-content;   
-  			width: -webkit-max-content;
-      }
+    }
 
-      .input-wrapper input {
+    .input-wrapper {
+        position: relative;
+        width: intrinsic;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+    }
+
+    .input-wrapper input {
         min-width: 120px;
         padding: 10px;
         margin-bottom: 24px;
-      }
+    }
 
-      .input-wrapper i {
+    .input-wrapper i {
         position: absolute;
         right: 10px;
         top: 12px;
         color: grey;
-      }
+    }
 
-			.btn{
-				width: 150px;
-			}
+    .btn{
+        width: 150px;
+    }
 
-    </style>
-  </head>
-  <body>
-    <form class="password-form" action="#" type="POST">
+{% endblock style %}
+
+{% block task_def %}
+    <script>
+        let div = document.createElement('div');
+        div.innerText += `{{ task_definition }}`;
+        let task_place = document.querySelector('.task_text');
+        task_place.append(div);
+    </script>
+{% endblock task_def %}
+
+{% block content %}
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"/>
+        <form class="password-form" action="#" type="POST">
 			<label class="input-wrapper">
 				Ввести пароль
 				<input type="password"/>
@@ -51,12 +64,10 @@
 			</label>
       <label class="input-wrapper">
 				Подтвердить пароль
-				<input type="password"/>
-				<i class="fas fa-eye icon-password"></i>
-                <label id="error" style="color: red"></label>
+          <input type="password"/>
+          <i class="fas fa-eye icon-password"></i>
+          <label id="error" style="color: red"></label>
 			</label>
 			<button type="submit" class="btn">Подтвердить</button>
     </form>
-    <script src="hw10.js"></script>
-  </body>
-</html>
+{% endblock content %}

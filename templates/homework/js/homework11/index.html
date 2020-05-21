@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Homework-buttons</title>
-	<style>
-	.btn-wrapper{
+{% extends 'homework/js/layout_for_js.html' %}
+
+{% block title %}{{ task_id }}{% endblock title %}
+
+{% block hw_number %}{{ task_id }}{% endblock hw_number %}
+
+{% block style %}
+    	.btn-wrapper{
 		height: 60vh;
 		display: flex;
 		align-items: center;
@@ -26,10 +25,19 @@
 	.btn:focus{
 		outline: none;
 	}
-	</style>
-</head>
-<body>
-	<div class="btn-wrapper">
+{% endblock style %}
+
+{% block task_def %}
+    <script>
+        let div = document.createElement('div');
+        div.innerText += `{{ task_definition }}`;
+        let task_place = document.querySelector('.task_text');
+        task_place.append(div);
+    </script>
+{% endblock task_def %}
+
+{% block content %}
+    	<div class="btn-wrapper">
     	<button class="btn">Enter</button>
 		<button class="btn">S</button>
 		<button class="btn">E</button>
@@ -38,6 +46,4 @@
 		<button class="btn">L</button>
 		<button class="btn">Z</button>
 	</div>
-	<script src="hw11.js"></script>
-</body>
-</html>
+{% endblock content %}
