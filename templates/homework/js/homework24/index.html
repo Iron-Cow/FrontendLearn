@@ -1,0 +1,59 @@
+{% extends 'homework/js/layout_for_js.html' %}
+{% load static %}
+
+{% block title %}{{ task_id }}{% endblock title %}
+
+{% block hw_number %}{{ task_id }}{% endblock hw_number %}
+
+{% block style %}
+{% endblock style %}
+
+{% block task_def %}
+    <script>
+        let div = document.createElement('div');
+        div.innerText += `{{ task_definition }}`;
+        let task_place = document.querySelector('.task_text');
+        task_place.append(div);
+    </script>
+{% endblock task_def %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/js_tasks/hw24/hw24.css' %}">
+    <div class="box">
+        <div class="display">
+            <input type="text" readonly size="18">
+        </div>
+        <div class="keys">
+            <p>
+                <input type="button" class="button gray" value="mrc">
+                <input type="button" class="button gray" value="m-">
+                <input type="button" class="button gray" value="m+">
+                <input type="button" class="button pink" value="/">
+            </p>
+            <p>
+                <input type="button" class="button black" value="7">
+                <input type="button" class="button black" value="8">
+                <input type="button" class="button black" value="9">
+                <input type="button" class="button pink" value="*">
+            </p>
+            <p>
+                <input type="button" class="button black" value="4">
+                <input type="button" class="button black" value="5">
+                <input type="button" class="button black" value="6">
+                <input type="button" class="button pink" value="-">
+            </p>
+            <p>
+                <input type="button" class="button black" value="1">
+                <input type="button" class="button black" value="2">
+                <input type="button" class="button black" value="3">
+                <input type="button" class="button pink" value="+">
+            </p>
+            <p>
+                <input type="button" class="button black" value="0">
+                <input type="button" class="button black" value=".">
+                <input type="button" class="button black" value="C">
+                <input type="button" class="button orange" value="=">
+            </p>
+        </div>
+    </div>
+{% endblock content %}
