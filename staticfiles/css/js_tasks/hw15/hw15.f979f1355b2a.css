@@ -1,0 +1,66 @@
+a.nav__mainlinks_item{
+	text-decoration: none;
+}
+a.nav__mainlinks_item:hover{
+	color: darkseagreen;
+}
+
+.go-up-button{
+    position: fixed;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: magenta;
+    text-shadow: aquamarine 3px 1px;
+    padding: 40px 40px 0;
+    /*border: 4px dashed darkgrey;*/
+
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    clip-path: polygon(50% 0,  100% 100%, 0 100%);
+        bottom: 30px;
+    right: 30px;
+
+}
+
+.go-up-button:hover{
+    text-shadow: none;
+    background-color: magenta;
+    color:white;
+    /*border: 4px dashed greenyellow;*/
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.show_button{
+
+    opacity: .8;
+    transition: 1s;
+    visibility: visible;
+
+
+}
+
+.footer_hidenews {
+	color: blue;
+	display: inline-block;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    background: greenyellow;
+    transition: 1s ease-out;
+}
+
+.footer_hidenews:hover {
+    transform: scale(1.4);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+
+}

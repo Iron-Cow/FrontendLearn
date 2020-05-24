@@ -1,0 +1,58 @@
+{% extends 'homework/js/layout_for_js.html' %}
+{% load static %}
+{% block title %}{{ task_id }}{% endblock title %}
+
+{% block hw_number %}{{ task_id }}{% endblock hw_number %}
+
+{% block style %}
+{% endblock style %}
+
+{% block task_def %}
+    <script>
+        let div = document.createElement('div');
+        div.innerText += `{{ task_definition }}`;
+        let task_place = document.querySelector('.task_text');
+        task_place.append(div);
+    </script>
+{% endblock task_def %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/js_tasks/hw25/hw25.css' %}">
+
+    <script>
+        let picArray = [
+            '{% static "img/js_tasks/hw25/1.jpg" %}',
+            '{% static "img/js_tasks/hw25/2.jpg" %}',
+            '{% static "img/js_tasks/hw25/3.jpg" %}',
+            '{% static "img/js_tasks/hw25/4.jpg" %}',
+            '{% static "img/js_tasks/hw25/5.jpg" %}',
+            '{% static "img/js_tasks/hw25/6.jpg" %}',
+        ];
+
+
+    </script>
+    <div class="slider_bar">
+        <div class="slider-arrow" id="leftarrow">←</div>
+        <div class="slider-window">
+            <div id="slider" class="slider">
+                <div class="thumb">
+                    <div class="picture1 picture"></div>
+                    <div class="picture2 picture"></div>
+                    <div class="picture3 picture"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-arrow" id="rightarrow">→</div>
+
+    </div>
+    <div class="radio_buttons">
+            <div class="radio_button radioactive"></div>
+            <div class="radio_button"></div>
+            <div class="radio_button"></div>
+            <div class="radio_button"></div>
+            <div class="radio_button"></div>
+            <div class="radio_button"></div>
+        </div>
+
+
+{% endblock content %}

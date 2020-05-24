@@ -1,0 +1,104 @@
+*{
+        font-family: "Roboto";
+        font-weight: 400;
+
+}
+
+.nav-link{
+    color: #16A085;
+    text-decoration: none;
+    margin-right: 65px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    /*font-family: sans-serif;*/
+    letter-spacing: 1.5px;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+
+
+}
+
+.navigation{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 35px;
+}
+
+.container-text{
+    background-color: #F5F6F7;
+    width: 100%;
+    padding-bottom: 94px;
+
+}
+
+.content{
+
+    width: 1059px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.content__title{
+    padding-top: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 34px;
+    color: #373737;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "Rappresent" */
+    letter-spacing: 3.3px;
+
+
+}
+.content__text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    color: #373737;
+
+}
+
+.btn{
+    margin-top: 40px;
+    background-color: #16A085;
+    height: 52px;
+    width: 193px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 2px;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    /* Text style for "get starte" */
+    letter-spacing: 1.8px;
+
+
+}
+
+
+footer{
+    background: #FFFFFF;
+    padding: 47px 0px 47px 768px ;
+
+
+}
+
+.copyright{
+    font-size: 16px;
+    color: #373737;
+    font-weight: 700;
+
+
+}

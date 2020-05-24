@@ -1,0 +1,20 @@
+{% extends 'homework/js/layout_for_js.html' %}
+
+{% block title %}{{ task_id }}{% endblock title %}
+
+{% block hw_number %}{{ task_id }}{% endblock hw_number %}
+
+{% block style %}
+{% endblock style %}
+
+{% block task_def %}
+    <script>
+        let div = document.createElement('div');
+        div.innerText += `{{ task_definition }}`;
+        let task_place = document.querySelector('.task_text');
+        task_place.append(div);
+    </script>
+{% endblock task_def %}
+
+{% block content %}
+{% endblock content %}
