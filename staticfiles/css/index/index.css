@@ -1,6 +1,6 @@
 body{
     background: url("../../img/index/dark_bg.jpg") center 0/cover no-repeat fixed;
-    backdrop-filter: blur(3px) grayscale(100%);
+    /*backdrop-filter: blur(3px) grayscale(100%);*/
 }
 .content{
     padding: 30px;
