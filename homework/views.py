@@ -30,3 +30,7 @@ def js_task(request, task_id: int):
         return render(request, f'homework/js/homework{task_id}/index.html', data)
     except TemplateDoesNotExist:
         return HttpResponse("Sorry, page is under construction")
+
+
+def step_ham(request):
+    return render(request, f'homework/step_projects/step_ham.html')
