@@ -187,11 +187,11 @@
             <div class="overline"></div>
 
 
-            <div class="section_linesymbol_tab greentext">All</div>
-            <div class="section_linesymbol_tab">Graphic Design</div>
-            <div class="section_linesymbol_tab">Web Design</div>
-            <div class="section_linesymbol_tab">Landing Pages </div>
-            <div class="section_linesymbol_tab">Wordpress</div>
+            <div class="amazingwork_tabbar_tab GraphicDesign WebDesign LandingPages Wordpress greentext">All</div>
+            <div class="amazingwork_tabbar_tab GraphicDesign">Graphic Design</div>
+            <div class="amazingwork_tabbar_tab WebDesign">Web Design</div>
+            <div class="amazingwork_tabbar_tab LandingPages">Landing Pages </div>
+            <div class="amazingwork_tabbar_tab Wordpress">Wordpress</div>
         </div>
 
         <script>
@@ -200,7 +200,7 @@
             let hover_pics = {
                 'download': '{% static "img/step_projects/step_ham/template_pics/download.png" %}',
                 'search': '{% static "img/step_projects/step_ham/template_pics/Layer_23.png" %}',
-            }
+            };
             {#image load imitation#}
             let load1 = {
                 'GraphicDesign': [
@@ -225,46 +225,60 @@
                 ],
             }
 
+            let load2 = {
+                'GraphicDesign': [
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design4.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design5.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design6.jpg" %}',
+                ],
+                'WebDesign': [
+                    '{% static "img/step_projects/step_ham/web design/web-design4.jpg" %}',
+                    '{% static "img/step_projects/step_ham/web design/web-design5.jpg" %}',
+                    '{% static "img/step_projects/step_ham/web design/web-design6.jpg" %}',
+                ],
+                'LandingPages': [
+                    '{% static "img/step_projects/step_ham/landing page/landing-page4.jpg" %}',
+                    '{% static "img/step_projects/step_ham/landing page/landing-page5.jpg" %}',
+                    '{% static "img/step_projects/step_ham/landing page/landing-page6.jpg" %}',
+                ],
+                'Wordpress': [
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress4.jpg" %}',
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress5.jpg" %}',
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress6.jpg" %}',
+                ],
+            }
+
+            let load3 = {
+                'GraphicDesign': [
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design7.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design8.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design9.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design10.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design11.jpg" %}',
+                    '{% static "img/step_projects/step_ham/graphic design/graphic-design12.jpg" %}',
+                ],
+                'WebDesign': [
+                    '{% static "img/step_projects/step_ham/web design/web-design7.jpg" %}',
+                ],
+                'LandingPages': [
+                    '{% static "img/step_projects/step_ham/landing page/landing-page7.jpg" %}',
+                ],
+                'Wordpress': [
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress7.jpg" %}',
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress8.jpg" %}',
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress9.jpg" %}',
+                    '{% static "img/step_projects/step_ham/wordpress/wordpress10.jpg" %}',
+                ],
+            }
+
 
         </script>
 
-        <div class="amazingwork_picturesblock">
-
-
-{#            <div class="amazingwork_picturesblock_picture" style="border-top: 3px solid #18cfab">#}
-{#                <div class="amazingwork_picturesblock_picture_hover">#}
-{#                    <div class="amazingwork_picturesblock_picture_hover_buttons">#}
-{##}
-{#                        <a href="#" class="amazingwork_picturesblock_picture_hover_button amazingwork_picturesblock_picture_hover_button_download">#}
-{#                            <img href="#" src="{% static 'img/step_projects/step_ham/template_pics/download.png' %}" alt="">#}
-{#                        </a>#}
-{#                        <a class="amazingwork_picturesblock_picture_hover_button amazingwork_picturesblock_picture_hover_button_search">#}
-{#                            <img src="{% static 'img/step_projects/step_ham/template_pics/Layer_23.png' %}" alt="">#}
-{#                        </a>#}
-{##}
-{#                    </div>#}
-{#                    <div class="amazingwork_picturesblock_picture_hover_slogan">#}
-{#                        creative design#}
-{#                    </div>#}
-{#                    <div class="amazingwork_picturesblock_picture_hover_category">#}
-{#                        Web Design#}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#            </div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design4.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/Sections background/section-2.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design8.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design10.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design1.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design1.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design1.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design7.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design2.jpg'%}" alt=""></div>#}
-            {#            <div class="amazingwork_picturesblock_picture"><img src="{% static 'img/step_projects/step_ham/graphic design/graphic-design1.jpg'%}" alt=""></div>#}
+        <div class="amazingwork_picturesblock"></div>
+        <div class="amazingwork_button">
+            <div class="amazingwork_button_plus"></div>
+            <div class="amazingwork_button_text">Load More</div>
         </div>
-        <div class="amazingwork_button"></div>
     </div>
 </div>
 
@@ -272,115 +286,144 @@
 
 <!--  -->
 <div class="breakingnews">
-    <div class="breakingnews_containe container">
-        <div class="breakingnews_title section_title"></div>
-        <div class="section_linesymbol"></div>
-        <div class="breakingnews_postgrid">
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
-            <div class="breakingnews_postgrid_post">
-                <div class="breakingnews_postgrid_post_date">
-                    <div class="breakingnews_postgrid_post_date_day">12</div>
-                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
-                </div>
-                <div class="breakingnews_postgrid_post_image"></div>
-                <div class="breakingnews_postgrid_post_discription">
-                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
-                    <div class="breakingnews_postgrid_post_discription_author">By admin</div>
-                    <div class="breakingnews_postgrid_post_discription_verticalline"></div>
-                    <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
-                </div>
-            </div>
+    <div class="breakingnews_container container">
+        <div class="breakingnews_title section_title">
+            Breaking News
         </div>
+        <div class="section_linesymbol"></div>
+
+
+        <div class="breakingnews_postgrid">
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/1.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/2.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/3.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/4.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/5.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/6.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/7.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="breakingnews_postgrid_post">
+                <div class="breakingnews_postgrid_post_date">
+                    <div class="breakingnews_postgrid_post_date_day">12</div>
+                    <div class="breakingnews_postgrid_post_date_month">Feb</div>
+                </div>
+                <div class="breakingnews_postgrid_post_image"><img
+                        src="{% static 'img/step_projects/step_ham/breaking_news/8.png' %}" alt=""></div>
+                <div class="breakingnews_postgrid_post_discription">
+                    <div class="breakingnews_postgrid_post_discription_title">Amazing Image Post</div>
+                    <div class="breakingnews_postgrid_post_discription_undertext">
+                        <div class="breakingnews_postgrid_post_discription_author">By admin</div>
+                        <div class="breakingnews_postgrid_post_discription_verticalline"></div>
+                        <div class="breakingnews_postgrid_post_discription_commentscount">2 comment</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
     </div>
 </div>
 
@@ -390,13 +433,21 @@
 <!--  -->
 <div class="peoplesay">
     <div class="peoplesay_container container">
-        <div class="peoplesay_title section_title"></div>
+        <div class="peoplesay_title section_title">
+            What People Say About theHam
+        </div>
         <div class="section_linesymbol"></div>
         <div class="peoplesay_quotes"></div>
-        <div class="peoplesay_text"></div>
+        <div class="peoplesay_text">
+            Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
+        </div>
         <div class="peoplesay_chosenblock">
-            <div class="peoplesay_chosenblock_name"></div>
-            <div class="peoplesay_chosenblock_position"></div>
+            <div class="peoplesay_chosenblock_name">
+                Hasan Ali
+            </div>
+            <div class="peoplesay_chosenblock_position">
+                UX Designer
+            </div>
             <div class="peoplesay_chosenblock_picture"></div>
         </div>
         <div class="peoplesay_carousel">
