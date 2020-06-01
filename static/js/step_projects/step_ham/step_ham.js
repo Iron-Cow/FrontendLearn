@@ -198,4 +198,12 @@ $('.breakingnews_postgrid_post').hover(
         $(this).removeClass('breakingnews_postgrid_post_active')
 
     }
-)
+);
+
+
+
+$('.peoplesay_carousel_people_option').click(function () {
+   $(this).siblings().removeClass('peoplesay_carousel_people_option_active');
+   $(this).addClass('peoplesay_carousel_people_option_active');
+        console.log($(this));
+});

@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/step_projects/step_ham/step_ham.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
 </head>
 <body>
 <script
         src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <div class="topsection">
     <nav class="topheader">
 
@@ -437,7 +442,9 @@
             What People Say About theHam
         </div>
         <div class="section_linesymbol"></div>
-        <div class="peoplesay_quotes"></div>
+        <div class="peoplesay_quotes">
+            <img src="{% static 'img/step_projects/step_ham/people_say/qutes.png' %}" alt="">
+        </div>
         <div class="peoplesay_text">
             Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.
         </div>
@@ -448,17 +455,42 @@
             <div class="peoplesay_chosenblock_position">
                 UX Designer
             </div>
-            <div class="peoplesay_chosenblock_picture"></div>
+            <div class="peoplesay_chosenblock_picture peoplesay_roundblock">
+                <img src="{% static 'img/step_projects/step_ham/people_say/3.jpg' %}" alt="">
+            </div>
         </div>
-        <div class="peoplesay_carousel">
-            <div class="peoplesay_carousel_navigationarrow" id="peoplesay_carousel_right"></div>
-            <div class="peoplesay_carousel_people_options"></div>
-            <div class="peoplesay_carousel_navigationarrow" id="peoplesay_carousel_left"></div>
+        <div class="peoplesay_carousel" >
+            <div class="peoplesay_carousel_navigationarrow" id="peoplesay_carousel_right">
+                <
+            </div>
+            <div class="peoplesay_carousel_people_options" >
+                <div class="peoplesay_carousel_people_option peoplesay_roundblock">
+                    <img src="{% static 'img/step_projects/step_ham/people_say/1.jpg' %}" alt="">
+                </div>
+                <div class="peoplesay_carousel_people_option peoplesay_roundblock">
+                    <img src="{% static 'img/step_projects/step_ham/people_say/2.jpg' %}" alt="">
+                </div>
+                <div class="peoplesay_carousel_people_option peoplesay_roundblock peoplesay_carousel_people_option_active">
+                    <img src="{% static 'img/step_projects/step_ham/people_say/3.jpg' %}" alt="">
+                </div>
+                <div class="peoplesay_carousel_people_option peoplesay_roundblock">
+                    <img src="{% static 'img/step_projects/step_ham/people_say/5.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <div class="peoplesay_carousel_navigationarrow" id="peoplesay_carousel_left">
+                >
+            </div>
         </div>
     </div>
 </div>
 
 <!-- .peoplesay>.peoplesay_container.container>.peoplesay_title.section_title+.section_linesymbol+.peoplesay_quotes+.peoplesay_text+.peoplesay_chosenblock>.peoplesay_chosenblock_name+.peoplesay_chosenblock_position+.peoplesay_chosenblock_picture^+.peoplesay_carousel>.peoplesay_carousel_navigationarrow#peoplesay_carousel_right+.peoplesay_carousel_people_options+.peoplesay_carousel_navigationarrow#peoplesay_carousel_left -->
+
+
+        <script>
+
+        </script>
 
 <!--  -->
 <div class="galery">
