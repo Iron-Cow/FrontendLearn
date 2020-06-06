@@ -178,7 +178,7 @@ function hover_generate(category){
 
 
 let loads_left = [load2, load3];
-$('.amazingwork_button').click(function () {
+$('#amazingwork_button').click(function () {
         let load = loads_left.shift();
         fill_pics_amazing(load);
         console.log(loads_left);
@@ -202,8 +202,125 @@ $('.breakingnews_postgrid_post').hover(
 
 
 
+//people say
+let peoplesay_base = [
+        {
+                'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi fugit nostrum reprehenderit, similique vero. Consequuntur corporis debitis, distinctio ducimus eos est hic inventore iusto labore laboriosam libero minus molestiae nobis odit optio quam quia quisquam ratione repudiandae sunt voluptas?',
+                'name': 'Biba Boba',
+                'position': 'Python developer',
+        },
+    {
+                'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, at autem, commodi cumque distinctio dolores enim explicabo fuga ipsum minus nulla perspiciatis reiciendis, reprehenderit sit tempore voluptatibus. Distinctio iste iusto laborum perferendis repellat veniam?',
+                'name': 'Dom Dang',
+                'position': 'JAVA developer',
+        },
+    {
+                'text': 'Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.',
+                'name': 'Hasan Ali',
+                'position': 'UX Designer',
+        },
+    {
+                'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deleniti distinctio illum ipsa, laboriosam laborum nobis nostrum sed soluta! Adipisci asperiores blanditiis enim et illo iste, nam, nisi quis sit sunt suscipit, voluptatum! Ad asperiores assumenda consequatur debitis dolor odit quam! Beatae consequatur, distinctio, id iure mollitia neque omnis pariatur possimus praesentium, rem saepe sunt unde vel veniam voluptates voluptatum!',
+                'name': 'Aldababsekh Boba',
+                'position': 'C++ developer',
+        },
+];
+for (let i=0; i<peoplesay_base.length; i++){
+    peoplesay_base[i]['img'] = $('.peoplesay_carousel_people_option img')[i].getAttribute('src');
+}
+
+let chosen_img = 2;
+
+    function change_people_say_pic(index){
+            let model = peoplesay_base[index];
+            $('.peoplesay_text').text(model['text']);
+            $('.peoplesay_chosenblock_name').text(model['name']);
+            $('.peoplesay_chosenblock_position').text(model['position']);
+            $('.peoplesay_chosenblock_picture img').attr('src', model['img']);
+    };
+
 $('.peoplesay_carousel_people_option').click(function () {
+    let index = $(this).index();
+    chosen_img = index;
+    change_people_say_pic(index);
    $(this).siblings().removeClass('peoplesay_carousel_people_option_active');
    $(this).addClass('peoplesay_carousel_people_option_active');
-        console.log($(this));
+        // console.log($(this));
 });
+
+$('#peoplesay_carousel_right').click(function () {
+  chosen_img = (chosen_img - 1 + peoplesay_base.length) % peoplesay_base.length;
+  $('.peoplesay_carousel_people_option')[chosen_img].click();
+  // change_people_say_pic(chosen_img);
+});
+
+$('#peoplesay_carousel_left').click(function () {
+  chosen_img = (chosen_img + 1) % peoplesay_base.length;
+  $('.peoplesay_carousel_people_option')[chosen_img].click();
+  // change_people_say_pic(chosen_img);
+});
+
+
+//masonry
+
+    let $grid = $('.galery_pictures_grid');
+
+$grid.imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+      // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: '.galery_pictures_grid_slide',
+      // use element for option
+      columnWidth: '.grid-sizer',
+      horizontalOrder: true,
+      percentPosition: true,
+      gutter: 17,
+    });
+
+});
+
+
+$('.galery_loadbutton').click(function () {
+    sample = document.createElement('div');
+    sample.classList.add('galery_pictures_grid_slide');
+    sample.classList.add('grid-sizer');
+    let pic = document.createElement('img');
+    pic.setAttribute('alt', '');
+    sample.append(pic);
+        // console.log(sample);
+
+                // category filtering
+
+            let picture_link = galery_load.shift();
+            let clone = sample.cloneNode(true);
+            clone.firstChild.setAttribute('src', picture_link);
+            // clone.classList.add(category);
+            $('.galery_pictures_grid').append(clone);
+            $grid.imagesLoaded( function() {
+                $('.galery_pictures_grid').masonry('appended', [clone]);
+            });
+        if (galery_load.length === 0){
+            $(this).remove();
+        }
+
+
+        // console.log(picture_link)
+
+
+
+
+});
+let masonryUpdate = function() {
+    setTimeout(function() {
+        $('.galery_pictures_grid').masonry();
+    }, 0);
+};
+$(document).on('click', masonryUpdate);
+$(document).on('imageLoad', masonryUpdate);
+
+
+
+
+//
+//
+//

@@ -659,10 +659,13 @@ font-weight: 400;
 }
 .peoplesay_text {
     color: #bbbbbb;
-font-size: 16px;
-font-weight: 300;
-line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
     margin-bottom: 43px;
+    text-align: justify;
+
+    text-align-last: center;
 }
 .peoplesay_chosenblock {
     display: flex;
@@ -745,7 +748,7 @@ line-height: 30px;
     transition: 1s;
 
 
-box-shadow: 0 0 0 10px rgba(31, 218, 181, 0.2);
+box-shadow: 0 0 0 5px rgba(31, 218, 181, 0.2);
 border-radius: 50%;
 position: relative;
 overflow: hidden;
@@ -767,19 +770,52 @@ overflow: hidden;
 
 
 .galery {}
-.galery_container {}
-.galery_title {}
-.galery_pictures_grid {}
-.galery_pictures_grid_column {}
-.galery_pictures_grid_column_slide {}
-.galery_loadbutton {}
+.galery_container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.galery_title {
+    padding: 97px 0 26px;
+}
+.galery_pictures_grid {
+    padding-top: 75px;
+    width: 100%;
+    /*border: 1px solid pink;*/
+}
+.grid-sizer{
+    width: calc(100%/3 - 11px);
+}
+
+.galery_pictures_grid_slide {
+    padding-bottom: 18px;
+
+}
+.galery_pictures_grid_slide img{
+    width: 100%;
+    height: auto;
+}
+.galery_loadbutton {
+    margin: 67px 0 81px;
+}
 
 
 /**/
 
 
-footer{}
-.footer_copyright {}
+footer{
+    background-color: #22353f;
+}
+.footer_copyright {
+    color: #aeaeae;
+    font-size: 14px;
+    font-weight: 300;
+    /*line-height: 26px;*/
+    text-align: center;
+    padding: 47px 0;
+}
+
 
 .greentext{
     color: #18cfab;

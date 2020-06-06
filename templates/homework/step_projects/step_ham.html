@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{% static 'css/step_projects/step_ham/step_ham.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+    <link rel="icon" href="{% static 'img/step_projects/step_ham/template_pics/healthcare-and-medical.png' %}">
+{#<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>#}
 
 </head>
 <body>
@@ -16,7 +17,10 @@
         src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+{#masonry#}
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <div class="topsection">
     <nav class="topheader">
@@ -280,7 +284,7 @@
         </script>
 
         <div class="amazingwork_picturesblock"></div>
-        <div class="amazingwork_button">
+        <div class="amazingwork_button" id="amazingwork_button">
             <div class="amazingwork_button_plus"></div>
             <div class="amazingwork_button_text">Load More</div>
         </div>
@@ -428,7 +432,7 @@
                 </div>
             </a>
         </div>
-        
+
     </div>
 </div>
 
@@ -484,37 +488,43 @@
         </div>
     </div>
 </div>
-
 <!-- .peoplesay>.peoplesay_container.container>.peoplesay_title.section_title+.section_linesymbol+.peoplesay_quotes+.peoplesay_text+.peoplesay_chosenblock>.peoplesay_chosenblock_name+.peoplesay_chosenblock_position+.peoplesay_chosenblock_picture^+.peoplesay_carousel>.peoplesay_carousel_navigationarrow#peoplesay_carousel_right+.peoplesay_carousel_people_options+.peoplesay_carousel_navigationarrow#peoplesay_carousel_left -->
 
+<script>
 
-        <script>
-
-        </script>
-
+</script>
 <!--  -->
+
+<script>
+    let galery_load = [
+
+        "{% static 'img/step_projects/step_ham/masonry/6.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/5.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/3.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/8.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/7.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/9.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/10.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/11.jpg' %}",
+        "{% static 'img/step_projects/step_ham/masonry/12.jpg' %}",
+    ]
+</script>
 <div class="galery">
     <div class="galery_container container">
-        <div class="galery_title section_title"></div>
+        <div class="galery_title section_title">
+            Gallery of best images
+        </div>
         <div class="section_linesymbol"></div>
         <div class="galery_pictures_grid">
-            <div class="galery_pictures_grid_column">
-                <div class="galery_pictures_grid_column_slide"></div>
-                <div class="galery_pictures_grid_column_slide"></div>
-                <div class="galery_pictures_grid_column_slide"></div>
-            </div>
-            <div class="galery_pictures_grid_column">
-                <div class="galery_pictures_grid_column_slide"></div>
-                <div class="galery_pictures_grid_column_slide"></div>
-                <div class="galery_pictures_grid_column_slide"></div>
-            </div>
-            <div class="galery_pictures_grid_column">
-                <div class="galery_pictures_grid_column_slide"></div>
-                <div class="galery_pictures_grid_column_slide"></div>
-                <div class="galery_pictures_grid_column_slide"></div>
-            </div>
+            <div class="galery_pictures_grid_slide grid-sizer"><img src="{% static 'img/step_projects/step_ham/masonry/2.jpg' %}" alt=""></div>
+            <div class="galery_pictures_grid_slide grid-sizer"><img src="{% static 'img/step_projects/step_ham/masonry/4.jpg' %}" alt=""></div>
+            <div class="galery_pictures_grid_slide grid-sizer"><img src="{% static 'img/step_projects/step_ham/masonry/1.jpg' %}" alt=""></div>
+
         </div>
-        <div class="galery_loadbutton"></div>
+        <div class="amazingwork_button galery_loadbutton">
+            <div class="amazingwork_button_plus"></div>
+            <div class="amazingwork_button_text">Load More</div>
+        </div>
     </div>
 </div>
 
@@ -525,7 +535,9 @@
 
 
 <footer>
-    <div class="footer_copyright"></div>
+    <div class="footer_copyright container">
+        © Copyright 2015 <span class="greentext">theHam</span> | All Rights Reserved
+    </div>
 </footer>
 <!-- footer>.footer_copyright -->
 <script src="{% static 'js/step_projects/step_ham/step_ham.js' %}"></script>
