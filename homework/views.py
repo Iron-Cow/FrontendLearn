@@ -34,3 +34,7 @@ def js_task(request, task_id: int):
 
 def step_ham(request):
     return render(request, f'homework/step_projects/step_ham.html')
+
+
+def advanced_html1(request):
+    return render(request, f'homework/advanced/html1.html')
