@@ -78,8 +78,6 @@
     background: #fff;
     bottom: 5px;
 
-
-
 }
 .burger.active_burger .burger__line{
         width: 100%;
@@ -98,8 +96,6 @@
     transition: .2s;
     /*display: none;*/
     opacity: 0;
-
-
 }
 
 .burger.active_burger .burger__line:last-child{
@@ -169,6 +165,7 @@
     padding-bottom: 6px;
 }
 .jumbotron__website {
+        display: block;
     color: #a6d6e0;
 
     font-family: 'Lato', sans-serif;
@@ -216,6 +213,7 @@ font-weight: 700;
 }
 
 .menu-topic__arrow{
+    display: block;
     background-color: #add7ae;
     width: calc(100% * 0.221875);
     height: 75px;
@@ -227,11 +225,9 @@ font-weight: 700;
 }
 .menu-blocks__topic:nth-child(2) .menu-topic__title {
         background: url("../../../img/advanced/html1/UX_Salads_fon.png") 100% bottom/cover no-repeat;
-
 }
 .menu-blocks__topic:nth-child(3) .menu-topic__title{
         background: url("../../../img/advanced/html1/Desserts_fon.png") center center/cover no-repeat;
-
 }
 
 .menu-blocks__topic:nth-child(1) .menu-topic__title-name{
@@ -324,7 +320,7 @@ font-weight: 700;
     text-transform: uppercase;
 }
 .section_bright {
-        color: #ffffff;
+    color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -333,6 +329,7 @@ font-weight: 700;
 }
 .mainmenu__section-content {
     padding: 0 18px 15px 16px;
+    margin-top: -6px;
 
 }
 .mainmenu__dish-type {
@@ -342,9 +339,9 @@ font-weight: 700;
     margin-bottom: 15.2px;
 
 }
-.mainmenu__section-content .mainmenu__dish-type:first-child {
-        margin-top: 11px;
-}
+/*.mainmenu__section-content .mainmenu__dish-type:first-child {*/
+/*        margin-top: 11px;*/
+/*}*/
 .mainmenu__dish-type-name {
     color: #3f4043;
     font-family: 'Lato', sans-serif;
@@ -421,4 +418,231 @@ footer{
 }
 .footer__text-row:first-child{
     margin-bottom: 6px;
+}
+
+@media only screen and (min-width: 640px) {
+.pagecontainer {}
+.navigation {}
+.navigation_small {}
+.navigation__logo {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 23px 37px 28px;
+}
+.navigation__burger {
+padding: 23px 23px;
+
+}
+.burger {
+    height: 29px;
+    width: 36px;
+    box-sizing: border-box;
+}
+.burger__line {
+    display: block;
+    height: 4px;
+    width: 85%;
+    position: absolute;
+    transition: 1s;
+}
+.navigation__dropdown-menu {
+    padding: 1px 0 12px;
+}
+.hidden_dropdown {}
+.navigation__dropdown-item {
+    font-size: 14px;
+
+/*    */
+
+    /*line-height: 40px;*/
+    padding: 10px 27px 0;
+    width: 242px;
+    margin-bottom: -2px;
+
+}
+
+.burger__line:nth-child(2){
+
+    top: 47%;
+    transform: translateY(-50%);
+    opacity: 1;
+
+}
+
+.burger__line:last-child{
+    background: #fff;
+    bottom: 5px;
+
+}
+.container {
+    padding: 0 39px;
+}
+.jumbotron {
+    padding-top: 25px;
+    padding-bottom: 198px;
+}
+
+.jumbotron__slogan {}
+.jumbotron__slogan-row {
+        font-size: 36px;
+    font-weight: 700;
+}
+.jumbotron__website {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 0 0;
+}
+.menu-blocks {}
+.menu-blocks__topic {
+    height: inherit;
+    margin-bottom: 0.5px;
+
+}
+.menu-topic__title {
+    height: 150px;
+
+}
+.menu-topic__title-name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    /*height: inherit;*/
+    /*padding: 58px 0;*/
+}
+.menu-topic__arrow {
+    height: 150px;
+    width: 142px;
+}
+
+.menu-topic__arrow span:before{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 15px;
+    background-color: #ffffff;
+    transform-origin: right;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+}
+.menu-topic__arrow span:after{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 15px;
+    background-color: #ffffff;
+    transform-origin: right;
+    transform: rotate(45deg);
+    border-radius: 2px;
+
+}
+
+.menu-blocks__topic:nth-child(1) .menu-topic__title-name{
+        margin: 0 0 0 0;
+}
+.menu-blocks__topic:nth-child(2) .menu-topic__title-name{
+        margin: 0 0 0 0;
+}
+.menu-blocks__topic:nth-child(3) .menu-topic__title-name{
+        margin: 0 0 0 0;
+}
+
+.menu-blocks__topic:nth-child(1) .menu-topic__title{
+        background: url("../../../img/advanced/html1/Pizza_delivery_fon640.png") 0 0/cover no-repeat ;
+}
+.menu-blocks__topic:nth-child(2) .menu-topic__title {
+        background: url("../../../img/advanced/html1/UX_Salads_fon640.png") 100% bottom/cover no-repeat;
+}
+.menu-blocks__topic:nth-child(3) .menu-topic__title{
+        background: url("../../../img/advanced/html1/Desserts_fon640.png") center center/cover no-repeat;
+}
+
+
+.mainmenu {}
+.mainmenu__title {
+    padding-top: 37px;
+    padding-bottom: 20px
+}
+.mainmenu__title-text {
+    padding: 0 0 0 18px;
+
+
+}
+.mainmenu__title-text-main {
+    font-size: 40px;
+    font-weight: 400;
+}
+.mainmenu__title-text-secondary {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 7px;
+    margin-left: 4px;
+}
+.mainmenu__title-image {}
+.mainmenu__sections {}
+.mainmenu__section {}
+.mainmenu__section-title {
+    font-size: 40px;
+
+    padding: 17px 37px;
+ margin-bottom: 22px;
+}
+.section_dark {}
+.mainmenu__section-content {
+ padding: 0 33px 15px 36px;
+margin-top: -6px;
+}
+
+.mainmenu__dish-type {
+    margin-top: 26px;
+    margin-bottom: 35px;
+}
+.mainmenu__dish-type-name {
+    font-size: 30px;
+    padding: 13px 0 0 0;
+}
+.mainmenu__dish-type-img {
+height: 50px;
+width: 51px;
+}
+.mainmenu__dish-type-img img {
+    height: 100%;
+}
+
+.mainmenu__dish {
+    margin-bottom: 19px;
+}
+.mainmenu__dish-head {
+    margin-bottom: 16px;
+}
+.mainmenu__dish-name {
+    font-size: 27px;
+    letter-spacing: 0;
+}
+.mainmenu__dish-price {
+    font-size: 27px;
+    letter-spacing: 0;
+
+font-weight: 700;
+}
+.mainmenu__dish-details {
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 19px;
+}
+.section_bright {}
+footer {
+    margin-top: 79px;
+    padding: 19px 10px;
+}
+.footer__logo {}
+.footer__text {}
+.footer__text-row {
+font-size: 18px;
+line-height: 31px;
+}
+.footer__text-row:first-child {
+    margin-bottom: -2px;
+}
+
+
 }

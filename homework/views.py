@@ -38,3 +38,4 @@ def step_ham(request):
 
 def advanced_html1(request):
     return render(request, f'homework/advanced/html1.html')
+
