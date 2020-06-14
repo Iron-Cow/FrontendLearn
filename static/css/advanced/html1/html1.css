@@ -29,6 +29,9 @@
     /*height: 100%;*/
     /*background: #fff;*/
 }
+.navigation_big {
+    display: none;
+}
 
 .burger{
     height: 19px;
@@ -39,11 +42,6 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*!*justify-content: space-between;*!*/
-    /*justify-content: center;*/
-
 
 }
 
@@ -165,12 +163,12 @@
     padding-bottom: 6px;
 }
 .jumbotron__website {
-        display: block;
+    display: block;
     color: #a6d6e0;
 
     font-family: 'Lato', sans-serif;
-font-size: 14px;
-font-weight: 700;
+    font-size: 14px;
+    font-weight: 700;
     padding: 5px 0 0;
 /*line-height: 64px;*/
 }
@@ -642,6 +640,190 @@ line-height: 31px;
 }
 .footer__text-row:first-child {
     margin-bottom: -2px;
+}
+
+
+}
+
+@media only screen and (min-width: 980px) {
+
+.pagecontainer {}
+.navigation {
+}
+.navigation_small {
+    display: none;
+}
+.navigation__logo {}
+.navigation__burger {}
+.burger {}
+.burger__line {}
+.navigation__dropdown-menu {}
+.hidden_dropdown {}
+.navigation__dropdown-item {}
+.navigation_big {
+    display: flex;
+    padding: 10px 30px 6px;
+}
+.navigation__link-bar {}
+.navigation__big-item {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /*line-height: 26px;*/
+    text-transform: uppercase;
+    margin-right: 26px;
+}
+.navigation__image{}
+.container {
+    padding: 0 31px;
+}
+.jumbotron {
+    padding-top: 55px;
+    padding-bottom: 263px;
+}
+
+.jumbotron__slogan {}
+.jumbotron__slogan-row {
+    font-size: 54px;
+    padding-bottom: 13px;
+}
+.jumbotron__website {
+    font-size: 34px;
+    padding: 43px 0 0
+}
+
+.menu-blocks {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-blocks__topic {
+    flex-basis: 33.3%;
+
+}
+
+
+.menu-topic__title {
+    padding: 142px 0;
+    height: inherit;
+}
+
+.menu-blocks__topic:nth-child(1) .menu-topic__title{
+        background: url("../../../img/advanced/html1/Pizza_delivery_fonbig.png") 0 0/cover no-repeat ;
+}
+.menu-blocks__topic:nth-child(2) .menu-topic__title {
+        background: url("../../../img/advanced/html1/UX_Salads_fonbig.png") 100% bottom/cover no-repeat;
+}
+.menu-blocks__topic:nth-child(3) .menu-topic__title{
+        background: url("../../../img/advanced/html1/Desserts_fonbig.png") center center/cover no-repeat;
+}
+
+.menu-topic__title-name {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: -2px;
+    /*line-height: 44px;*/
+}
+
+
+
+.menu-topic__arrow {
+    display: none;
+}
+.menu-blocks__topic_high {}
+.mainmenu {}
+.mainmenu__title {
+    display: flex;
+    align-items: center;
+    padding: 52px 28px 9px;
+}
+.mainmenu__title-text {
+    flex: 1 1;
+    padding: 0 0 0 0;
+}
+.mainmenu__title-text-main {
+    font-size: 34px;
+}
+.mainmenu__title-text-secondary {
+    font-size: 20px;
+}
+.mainmenu__title-image {
+    display: block;
+}
+.mainmenu__sections {
+    flex-direction: row;
+
+}
+.mainmenu__section {
+    flex-basis: 50%;
+}
+.mainmenu__section-title {
+    font-size: 34px;
+    padding: 20px 18px 20px 19px;
+
+    margin-bottom: 0;
+}
+.section_dark {}
+.mainmenu__section-content {
+    /*padding: 0;*/
+        padding: 0 9px 16px 17px;
+    margin-top: -7px;
+
+}
+.mainmenu__dish-type {
+margin-top: 37px;
+margin-bottom: 35px;
+}
+.mainmenu__dish-type-name {
+    font-size: 26px;
+        padding: 10px 0 0 0;
+}
+.mainmenu__dish-type-img {
+    height: 42px;
+    width: 42px;
+}
+.mainmenu__dish {
+    margin-bottom: 24px;
+}
+.mainmenu__dish-head {
+    margin-bottom: 14px;
+}
+.mainmenu__dish-name {
+    font-size: 24px;
+
+}
+.mainmenu__dish-price {
+    font-size: 24px;
+}
+.mainmenu__dish-details {
+    font-size: 16px;
+    letter-spacing: 0;
+    /*line-height: 19px;*/
+    padding-left: 6px;
+}
+.section_bright ~ .mainmenu__section-content{
+    margin-left: 5px;
+    padding-right: 19px;
+    padding-left: 5px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+    padding: 7px 30px;
+}
+.footer__logo {
+    display: block;
+}
+.footer__text {
+
+}
+.footer__text-row {
+    display: inline-block;
+    font-size: 18px;
 }
 
 
