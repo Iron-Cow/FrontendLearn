@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Pizza Hubt</title>
-    <link rel="stylesheet" href="../../../static/css/advanced/html1/html1.css">
-    <link rel="stylesheet" href="../../../static/css/reset.css">
+    <link rel="stylesheet" href="{% static 'css/advanced/html1/html1.css'%} ">
+    <link rel="stylesheet" href="{% static 'css/reset.css'%} ">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../static/css/advanced/html1/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/advanced/html1/font-awesome-4.7.0/css/font-awesome.min.css'%} ">
 </head>
 <body>
 <div class="pagecontainer">
@@ -36,7 +37,7 @@
             <a href="#" class="navigation__big-item">Contacts</a>
         </div>
         <div class="navigation__image">
-            <img src="../../../static/img/advanced/html1/navigation-logo.png" alt="navigation-logo">
+            <img src="{% static 'img/advanced/html1/navigation-logo.png'%} " alt="navigation-logo">
         </div>
     </div>
     <div class="jumbotron container">
@@ -89,7 +90,7 @@
                 
             </div>
             <div class="mainmenu__title-image">
-                <img src="../../../static/img/advanced/html1/menu_icon.png" alt="menu-icon">
+                <img src="{% static 'img/advanced/html1/menu_icon.png'%} " alt="menu-icon">
             </div>
         </div>
         <div class="mainmenu__sections">
@@ -103,7 +104,7 @@
                             id hendrerit velit quis
                         </div>
                         <div class="mainmenu__dish-type-img">
-                            <img src="../../../static/img/advanced/html1/dish_logo1.png" alt="">
+                            <img src="{% static 'img/advanced/html1/dish_logo1.png'%} " alt="">
                         </div>
                     </div>
                     <div class="mainmenu__dish">
@@ -156,7 +157,7 @@
                             id dolor Pellentesque
                         </div>
                         <div class="mainmenu__dish-type-img">
-                            <img src="../../../static/img/advanced/html1/dish_logo2.png" alt="">
+                            <img src="{% static 'img/advanced/html1/dish_logo2.png'%} " alt="">
                         </div>
                     </div>
                     <div class="mainmenu__dish">
@@ -201,7 +202,7 @@
                             augue Proin eleifend
                         </div>
                         <div class="mainmenu__dish-type-img">
-                            <img src="../../../static/img/advanced/html1/dish_logo3.png" alt="">
+                            <img src="{% static 'img/advanced/html1/dish_logo3.png'%} " alt="">
                         </div>
                     </div>
                     <div class="mainmenu__dish">
@@ -254,7 +255,7 @@
                             pharetra at sit amet sem
                         </div>
                         <div class="mainmenu__dish-type-img">
-                            <img src="../../../static/img/advanced/html1/dish_logo4.png" alt="">
+                            <img src="{% static 'img/advanced/html1/dish_logo4.png'%} " alt="">
                         </div>
                     </div>
                     <div class="mainmenu__dish">
@@ -286,7 +287,7 @@
 
     <footer class="footer">
         <div class="footer__logo">
-            <img src="../../../static/img/advanced/html1/navigation-logo.png" alt="navigation-logo">
+            <img src="{% static 'img/advanced/html1/navigation-logo.png'%} " alt="navigation-logo">
 
         </div>
         <div class="footer__text">
@@ -298,6 +299,6 @@
 </div>
 
 
-<script src="../../../static/js/advanced/html1/html1.js"></script>
+<script src="{% static 'js/advanced/html1/html1.js'%} "></script>
 </body>
 </html>
