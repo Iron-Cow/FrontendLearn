@@ -39,3 +39,26 @@ def step_ham(request):
 def advanced_html1(request):
     return render(request, f'homework/advanced/html1.html')
 
+
+def advanced_js1(request):
+    return render(request, f'homework/advanced/js1.html')
+
+
+def advanced_js2(request):
+    return render(request, f'homework/advanced/js2.html')
+
+
+def advanced_js3(request):
+    return render(request, f'homework/advanced/js3.html')
+
+
+def advanced_ajax4(request):
+    return render(request, f'homework/advanced/ajax4.html')
+
+
+def advanced_ajax5(request):
+    return render(request, f'homework/advanced/ajax5.html')
+
+
+def step_forkio(request):
+    return render(request, f'homework/step_projects/step_forkio.html')

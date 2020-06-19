@@ -1,0 +1,175 @@
+.font_M_regular, .revolution .revolution__container .revolution__download .revolution__trial, .jumbotron .jumbotron__container .jumbotron__version, .jumbotron .jumbotron__container .jumbotron__slogan, header .header .header__linkbar .linkbar__item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.font_M_bold, .revolution .revolution__container .revolution__title, .revolution .revolution__container .revolution__download .revolution__download-button, .jumbotron .jumbotron__container .jumbotron__title, header .header .header__button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.font_L_bold_italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.font_L_regular, .revolution .revolution__container .revolution__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.body {
+  min-width: 320px;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+header {
+  background-color: #27262a;
+  padding: 31px 6px;
+  position: relative;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header .header__logo {
+  display: block;
+}
+header .header .header__button {
+  display: block;
+  background-color: #8d81ac;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 11px 23px;
+  font-size: 15px;
+}
+header .header .header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+header .header .header__burger .burger__line {
+  background-color: #fff;
+  height: 3px;
+  width: 26px;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+header .header .header__burger .burger__line:first-child {
+  width: 20px;
+  margin-top: 0;
+}
+header .header .header__linkbar {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  margin: 0 16px;
+  background-color: #333333;
+  padding-bottom: 12px;
+  opacity: 1;
+  transition: 1s;
+}
+header .header .header__linkbar .linkbar__item {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 88px;
+  padding: 0 31px;
+  border-bottom: 1px solid gray;
+}
+header .header .header__linkbar .linkbar__item:hover {
+  color: #8d81ac;
+}
+header .header .header__linkbar .linkbar__item:hover:before {
+  content: "";
+  height: 54px;
+  width: 7px;
+  background-color: #8d81ac;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .header .hidden_dropdown {
+  opacity: 0;
+  transition: 1s;
+  transform-origin: top right;
+  transform: scale(0.01) translateY(-400px);
+}
+
+.jumbotron {
+  background: url("../../../img/step_projects/step_forkio/laptop_bg.png") no-repeat center 73%;
+}
+.jumbotron .jumbotron__container {
+  text-align: center;
+  padding: 38px 32px 423px;
+}
+.jumbotron .jumbotron__container .jumbotron__title {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 13px;
+}
+.jumbotron .jumbotron__container .jumbotron__slogan {
+  color: #8d81ac;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: justify;
+  line-height: 34px;
+  margin-bottom: 11px;
+}
+.jumbotron .jumbotron__container .jumbotron__version {
+  color: #848e97;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.revolution {
+  text-align: center;
+}
+.revolution .revolution__container {
+  padding: 0 15px;
+}
+.revolution .revolution__container .revolution__download {
+  display: inline-block;
+}
+.revolution .revolution__container .revolution__download .revolution__download-button {
+  background-color: #8d81ac;
+  border-radius: 19px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 13px 31px;
+  transform: translateY(-50%);
+}
+.revolution .revolution__container .revolution__download .revolution__trial {
+  color: #848e97;
+  font-size: 14px;
+  margin-top: -11px;
+}
+.revolution .revolution__container .revolution__title {
+  color: #635c73;
+  font-size: 26px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.revolution .revolution__container .revolution__text {
+  margin-top: 7px;
+  opacity: 0.8;
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+}
+
+/*# sourceMappingURL=step_forkio.css.map */

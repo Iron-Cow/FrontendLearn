@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step Forkio</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/step_projects/step_forkio/step_forkio.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/step_projects/step_ham/template_pics/healthcare-and-medical.png' %}">
+{#<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>#}
+    <link rel="stylesheet" href="{% static 'css/step_projects/step_forkio/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+
+</head>
+<body>
+<header >
+    <div class="header container">
+        <a href="#" class="header__logo">
+            <img src="{% static 'img/step_projects/step_forkio/Logo.png' %}" alt="logo">
+        </a>
+        <a href="#" class="header__button">
+            Buy Now
+        </a>
+        <div class="header__burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+        </div>
+        <div class="header__linkbar hidden_dropdown">
+                <a href="#Overview" class="linkbar__item">Overview</a>
+                <a href="#About" class="linkbar__item">About Fork</a>
+                <a href="#Buying" class="linkbar__item">Buying Options</a>
+                <a href="#Support" class="linkbar__item">Support</a>
+        </div>
+    </div>
+</header>
+<div class="jumbotron" id="Overview">
+    <div class="jumbotron__container container">
+        <div class="jumbotron__title">Fork App</div>
+        <div class="jumbotron__slogan">A real gamechanger in the world of web development</div>
+        <div class="jumbotron__version">v. 2.8 For Mac and Windows</div>
+    </div>
+</div>
+
+<div class="revolution">
+    <div class="revolution__container container">
+        <div class="revolution__download">
+            <div class="revolution__download-button">
+                Download For Free Now
+            </div>
+            <div class="revolution__trial">
+                Unlimited 30-Days Trial Period
+            </div>
+        </div>
+        <div class="revolution__title">
+            Revolutionary editor
+        </div>
+        <div class="revolution__text">
+            Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+        </div>
+        <div class="revolution__buttons">
+            <div class="revolution__button"></div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/step_projects/step_forkio/step_forkio.js' %}"></script>
+</body>
+</html>

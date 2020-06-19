@@ -1,0 +1,206 @@
+.font_M_regular{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.font_M_bold{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.font_L_bold_italic{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.font_L_regular{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.body{
+  min-width: 320px;
+}
+.container{
+  padding: 0 10px;
+}
+header{
+  background-color: #27262a;
+  padding: 31px 6px;
+  position: relative;
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    .header__logo {
+      display: block;
+    }
+
+    .header__button {
+      @extend .font_M_bold;
+      display: block;
+      background-color: #8d81ac;
+      border-radius: 20px;
+      color: #ffffff;
+      padding: 11px 23px;
+      font-size: 15px;
+    }
+
+    .header__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      cursor: pointer;
+
+      .burger__line {
+        background-color: #fff;
+        height: 3px;
+        width: 26px;
+        margin-top: 6px;
+        border-radius: 2px;
+
+        &:first-child {
+          width: 20px;
+          margin-top: 0;
+        }
+      }
+    }
+
+
+    .header__linkbar {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      margin: 0 16px;
+      background-color: #333333;
+      padding-bottom: 12px;
+      opacity: 1;
+      transition: 1s;
+
+
+
+
+
+
+      .linkbar__item {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        @extend .font_M_regular;
+        color: #ffffff;
+        font-size: 26px;
+        line-height: 88px;
+        padding: 0 31px;
+        border-bottom: 1px solid gray;
+
+        &:hover{
+          color: #8d81ac;
+          &:before{
+            content: "";
+            height: 54px;
+            width: 7px;
+            background-color: #8d81ac;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    .hidden_dropdown{
+      opacity: 0;
+      transition: 1s;
+      transform-origin: top right;
+      transform: scale(0.01) translateY(-400px);
+      //display: none;
+    }
+  }
+}
+.jumbotron {
+  background: url("../../../img/step_projects/step_forkio/laptop_bg.png")no-repeat center 73%;
+  .jumbotron__container {
+    text-align: center;
+    padding: 38px 32px 423px;
+    .jumbotron__title {
+      @extend .font_M_bold;
+      color: #ffffff;
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+    .jumbotron__slogan {
+      @extend .font_M_regular;
+      color: #8d81ac;
+      font-size: 18px;
+      text-transform: capitalize;
+      text-align: justify;
+      line-height: 34px;
+      margin-bottom: 11px;
+
+    }
+    .jumbotron__version {
+      @extend .font_M_regular;
+      color: #848e97;
+      font-size: 14px;
+      text-transform: uppercase;
+
+    }
+  }
+}
+
+.revolution {
+  text-align: center;
+  .revolution__container {
+    padding: 0 15px;
+    .revolution__download {
+      display: inline-block;
+      .revolution__download-button {
+        @extend .font_M_bold;
+        background-color: #8d81ac;
+        border-radius: 19px;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 13px 31px;
+        transform: translateY(-50%);
+
+      }
+      .revolution__trial {
+        @extend .font_M_regular;
+        color: #848e97;
+        font-size: 14px;
+        margin-top: -11px;
+      }
+    }
+
+    .revolution__title {
+      @extend .font_M_bold;
+      color: #635c73;
+      font-size: 26px;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin-top: 60px;
+    }
+    .revolution__text {
+      @extend .font_L_regular;
+      margin-top: 7px;
+      opacity: 0.8;
+      color: #323232;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -.05px;
+    }
+    .revolution__buttons {
+      .revolution__button {}
+    }
+
+  }
+}
+
+
+
