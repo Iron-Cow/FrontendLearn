@@ -16,11 +16,10 @@
   font-weight: 400;
 }
 
-.body{
-  min-width: 320px;
-}
+
 .container{
   padding: 0 10px;
+  //min-width: 320px;
 }
 header{
   background-color: #27262a;
@@ -139,7 +138,6 @@ header{
       color: #8d81ac;
       font-size: 18px;
       text-transform: capitalize;
-      text-align: justify;
       line-height: 34px;
       margin-bottom: 11px;
 
@@ -156,6 +154,7 @@ header{
 
 .revolution {
   text-align: center;
+  padding-bottom: 71px;
   .revolution__container {
     padding: 0 15px;
     .revolution__download {
@@ -196,10 +195,805 @@ header{
       letter-spacing: -.05px;
     }
     .revolution__buttons {
-      .revolution__button {}
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 32px;
+      padding: 0 0 ;
+      .revolution__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+        margin: 0 9px 17px;
+
+        .revolution__button-right {
+          display: block;
+          color: black;
+          text-decoration: black;
+          border-right: 1px solid #eaeaea;
+          padding: 6px 9px;
+          background: linear-gradient(#fcfcfc, #eeeeef);
+          &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+          }
+        }
+        .revolution__button-left {
+          padding: 6px 6px;
+          font-size: 12px;
+        }
+      }
     }
 
   }
+}
+
+.benefits {
+  overflow: hidden;
+  background-color: #f4f4f4;
+  .benefits__container {
+    padding-bottom: 3px;
+    .benefits__title {
+      color: #8d81ac;
+      @extend .font_M_bold;
+      font-size: 32px;
+      text-align: center;
+      line-height: 38px;
+      padding: 29px 0;
+    }
+    .benefits__options {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3px 0 23px;
+
+
+      .benefits__option {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        padding: 0 0 0 0 ;
+
+
+        .benefits__option-picture {
+          padding: 0 0 0 0 ;
+          margin-bottom: 28px;
+
+        }
+        .benefits__option-title {
+          color: #323232;
+          @extend .font_M_regular;
+          font-size: 16px;
+          //line-height: 21px;
+          padding: 0 0 0 0 ;
+          margin-bottom: 13px;
+
+        }
+        .benefits__option-text {
+          color: #848e97;
+          @extend .font_L_regular;
+          letter-spacing: .6px;
+          margin-bottom: 30px;
+
+
+          font-size: 14px;
+          line-height: 21px;
+          padding: 0 0 0 0 ;
+
+        }
+      }
+    }
+    .benefits__code {
+      align-self: flex-start;
+      margin-left: -7px;
+
+      height: 381px;
+      padding: 0 0 0 0 ;
+      img{
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+.peopletalk {
+  background-color: #4b3b4e;
+  background-image: url("../../../img/step_projects/step_forkio/testmonials-bg.png");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .peopletalk__container {
+    text-align: center;
+    //padding-bottom: 71px;
+    .peopletalk__title {
+      color: #ffffff;
+      font-size: 36px;
+
+      @extend .font_M_bold;
+      line-height: 48px;
+      padding-top: 56px;
+      margin-bottom: 35px;
+    }
+    .peopletalk__feedback {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .peopletalk__post {
+      flex-basis: 100%;
+      padding-bottom: 34px;
+      .peopletalk__post-picture {
+
+        //height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //border: 1px solid green;
+
+        img{
+          vertical-align: center;
+          align-self: center;
+          //border: 1px solid red;
+
+        }
+      }
+      .peopletalk__post-text {
+        @extend .font_L_bold_italic;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        text-align-last: center;
+        padding: 0 33px 0 29px;
+      }
+    }
+    .peopletalk__undertext {
+      display: none;
+    }
+    .peopletalk__underline {
+      height: 2px;
+      width: 93%;
+      margin: 5px auto 0;
+      //position: absolute;
+      //display: none;
+      background-color: #645766;
+
+    }
+  }
+}
+.peopletalk__post:nth-child(1) > .peopletalk__post-picture{margin-bottom: 30px}
+.peopletalk__post:nth-child(2) > .peopletalk__post-picture{margin-bottom: 30px}
+.peopletalk__post:nth-child(3) > .peopletalk__post-picture{margin-bottom: 17px}
+.peopletalk__post:nth-child(4) > .peopletalk__post-picture{margin-top: 8px; margin-bottom: 29px}
+.peopletalk__post:nth-child(5) > .peopletalk__post-picture{margin-top: 9px; margin-bottom: 24px}
+.peopletalk__post:nth-child(6) > .peopletalk__post-picture{margin-top: 9px; margin-bottom: 24px}
+
+
+.pricing {
+  background-color: #4b3b4e;
+  background-image: url("../../../img/step_projects/step_forkio/testmonials-bg_2.png");
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .pricing__container {
+    //height: 300px;
+    padding: 71px 0 0 0;
+    text-align: center;
+
+
+
+    .pricing__title {
+      color: #ffffff;
+      font-size: 28px;
+
+      @extend .font_M_bold;
+      line-height: 42px;
+    }
+    .pricing__options {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .pricing__option {
+        flex-basis: 85%;
+        background-color: rgb(255, 255, 255, 0.11);
+
+
+        .pricing__option-category {
+          font-size: 24px;
+          @extend .font_M_regular;
+          line-height: 20.45px;
+          text-transform: uppercase;
+          color: #ffffff;
+          background-color: rgb(255, 255, 255, 0.06);
+
+
+        }
+        .pricing__option-price {
+
+          color: #ffffff;
+          font-size: 60px;
+          line-height: 90.28px;
+          text-transform: uppercase;
+          @extend .font_M_bold;
+          & span{
+            @extend .font_M_regular;
+
+          }
+
+        }
+        .pricing__option-period {
+          opacity: 0.3;
+          color: #ffffff;
+          @extend .font_M_regular;
+          font-size: 14px;
+          line-height: 90.28px;
+          text-transform: uppercase;
+
+        }
+        .pricing__option-line {}
+        .pricing__option-description {
+          color: #ffffff;
+          @extend .font_M_regular;
+          font-size: 16px;
+          line-height: 28px;
+        }
+
+      }
+      .pricing__option_chosen {
+        flex-basis: 90%;
+        background-color: #41334484;
+        .pricing__option-category {
+          font-size: 24px;
+          @extend .font_M_regular;
+          line-height: 20.45px;
+          text-transform: uppercase;
+          color: #ffffff;
+          background-color: #3a2d3d
+
+
+
+        }
+        .pricing__option-price {
+
+          color: #ffffff;
+          font-size: 60px;
+          line-height: 90.28px;
+          text-transform: uppercase;
+          @extend .font_M_bold;
+          & span{
+            @extend .font_M_regular;
+
+          }
+
+        }
+        .pricing__option-period {
+          opacity: 0.3;
+          color: #ffffff;
+          @extend .font_M_regular;
+          font-size: 14px;
+          line-height: 90.28px;
+          text-transform: uppercase;
+
+        }
+        .pricing__option-line {}
+        .pricing__option-description {
+          color: #ffffff;
+          @extend .font_M_regular;
+          font-size: 16px;
+          line-height: 28px;
+        }
+        .pricing__option_button{
+          color: #ffffff;
+          @extend .font_M_regular;
+          font-size: 15px;
+          line-height: 20.45px;
+          text-transform: uppercase;
+        }
+      }.font_M_regular{
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 400;
+       }
+      .font_M_bold{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+      .font_L_bold_italic{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      .font_L_regular{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+      }
+
+
+      .container{
+        padding: 0 10px;
+        //min-width: 320px;
+      }
+      header{
+        background-color: #27262a;
+        padding: 31px 6px;
+        position: relative;
+
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+
+
+          .header__logo {
+            display: block;
+          }
+
+          .header__button {
+            @extend .font_M_bold;
+            display: block;
+            background-color: #8d81ac;
+            border-radius: 20px;
+            color: #ffffff;
+            padding: 11px 23px;
+            font-size: 15px;
+          }
+
+          .header__burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            cursor: pointer;
+
+            .burger__line {
+              background-color: #fff;
+              height: 3px;
+              width: 26px;
+              margin-top: 6px;
+              border-radius: 2px;
+
+              &:first-child {
+                width: 20px;
+                margin-top: 0;
+              }
+            }
+          }
+
+
+          .header__linkbar {
+            display: block;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            margin: 0 16px;
+            background-color: #333333;
+            padding-bottom: 12px;
+            opacity: 1;
+            transition: 1s;
+
+
+
+
+
+
+            .linkbar__item {
+              display: block;
+              position: relative;
+              box-sizing: border-box;
+              @extend .font_M_regular;
+              color: #ffffff;
+              font-size: 26px;
+              line-height: 88px;
+              padding: 0 31px;
+              border-bottom: 1px solid gray;
+
+              &:hover{
+                color: #8d81ac;
+                &:before{
+                  content: "";
+                  height: 54px;
+                  width: 7px;
+                  background-color: #8d81ac;
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+          }
+          .hidden_dropdown{
+            opacity: 0;
+            transition: 1s;
+            transform-origin: top right;
+            transform: scale(0.01) translateY(-400px);
+            //display: none;
+          }
+        }
+      }
+      .jumbotron {
+        background: url("../../../img/step_projects/step_forkio/laptop_bg.png")no-repeat center 73%;
+        .jumbotron__container {
+          text-align: center;
+          padding: 38px 32px 423px;
+          .jumbotron__title {
+            @extend .font_M_bold;
+            color: #ffffff;
+            font-size: 48px;
+            margin-bottom: 13px;
+          }
+          .jumbotron__slogan {
+            @extend .font_M_regular;
+            color: #8d81ac;
+            font-size: 18px;
+            text-transform: capitalize;
+            line-height: 34px;
+            margin-bottom: 11px;
+
+          }
+          .jumbotron__version {
+            @extend .font_M_regular;
+            color: #848e97;
+            font-size: 14px;
+            text-transform: uppercase;
+
+          }
+        }
+      }
+
+      .revolution {
+        text-align: center;
+        padding-bottom: 71px;
+        .revolution__container {
+          padding: 0 15px;
+          .revolution__download {
+            display: inline-block;
+            .revolution__download-button {
+              @extend .font_M_bold;
+              background-color: #8d81ac;
+              border-radius: 19px;
+              color: #ffffff;
+              font-size: 18px;
+              padding: 13px 31px;
+              transform: translateY(-50%);
+
+            }
+            .revolution__trial {
+              @extend .font_M_regular;
+              color: #848e97;
+              font-size: 14px;
+              margin-top: -11px;
+            }
+          }
+
+          .revolution__title {
+            @extend .font_M_bold;
+            color: #635c73;
+            font-size: 26px;
+            line-height: 42px;
+            text-transform: uppercase;
+            margin-top: 60px;
+          }
+          .revolution__text {
+            @extend .font_L_regular;
+            margin-top: 7px;
+            opacity: 0.8;
+            color: #323232;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -.05px;
+          }
+          .revolution__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 32px;
+            padding: 0 0 ;
+            .revolution__button {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #eaeaea;
+              border-radius: 2px;
+
+              font-family: Arial, sans-serif;
+              font-weight: 700;
+              margin: 0 9px 17px;
+
+              .revolution__button-right {
+                display: block;
+                color: black;
+                text-decoration: black;
+                border-right: 1px solid #eaeaea;
+                padding: 6px 9px;
+                background: linear-gradient(#fcfcfc, #eeeeef);
+                &:hover{
+                  transform: scale(1.05);
+                  cursor: pointer;
+                }
+              }
+              .revolution__button-left {
+                padding: 6px 6px;
+                font-size: 12px;
+              }
+            }
+          }
+
+        }
+      }
+
+      .benefits {
+        overflow: hidden;
+        background-color: #f4f4f4;
+        .benefits__container {
+          padding-bottom: 3px;
+          .benefits__title {
+            color: #8d81ac;
+            @extend .font_M_bold;
+            font-size: 32px;
+            text-align: center;
+            line-height: 38px;
+            padding: 29px 0;
+          }
+          .benefits__options {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 0 23px;
+
+
+            .benefits__option {
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+
+              align-items: center;
+              padding: 0 0 0 0 ;
+
+
+              .benefits__option-picture {
+                padding: 0 0 0 0 ;
+                margin-bottom: 28px;
+
+              }
+              .benefits__option-title {
+                color: #323232;
+                @extend .font_M_regular;
+                font-size: 16px;
+                //line-height: 21px;
+                padding: 0 0 0 0 ;
+                margin-bottom: 13px;
+
+              }
+              .benefits__option-text {
+                color: #848e97;
+                @extend .font_L_regular;
+                letter-spacing: .6px;
+                margin-bottom: 30px;
+
+
+                font-size: 14px;
+                line-height: 21px;
+                padding: 0 0 0 0 ;
+
+              }
+            }
+          }
+          .benefits__code {
+            align-self: flex-start;
+            margin-left: -7px;
+
+            height: 381px;
+            padding: 0 0 0 0 ;
+            img{
+              height: 100%;
+            }
+          }
+        }
+
+      }
+
+      .peopletalk {
+        background-color: #4b3b4e;
+        background-image: url("../../../img/step_projects/step_forkio/testmonials-bg.png");
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .peopletalk__container {
+          text-align: center;
+          //padding-bottom: 71px;
+          .peopletalk__title {
+            color: #ffffff;
+            font-size: 36px;
+
+            @extend .font_M_bold;
+            line-height: 48px;
+            padding-top: 56px;
+            margin-bottom: 35px;
+          }
+          .peopletalk__feedback {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+          }
+          .peopletalk__post {
+            flex-basis: 100%;
+            padding-bottom: 34px;
+            .peopletalk__post-picture {
+
+              //height: 64px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              //border: 1px solid green;
+
+              img{
+                vertical-align: center;
+                align-self: center;
+                //border: 1px solid red;
+
+              }
+            }
+            .peopletalk__post-text {
+              @extend .font_L_bold_italic;
+              color: #ffffff;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: justify;
+              text-align-last: center;
+              padding: 0 33px 0 29px;
+            }
+          }
+          .peopletalk__undertext {
+            display: none;
+          }
+          .peopletalk__underline {
+            height: 2px;
+            width: 93%;
+            margin: 5px auto 0;
+            //position: absolute;
+            //display: none;
+            background-color: #645766;
+
+          }
+        }
+      }
+      .peopletalk__post:nth-child(1) > .peopletalk__post-picture{margin-bottom: 30px}
+      .peopletalk__post:nth-child(2) > .peopletalk__post-picture{margin-bottom: 30px}
+      .peopletalk__post:nth-child(3) > .peopletalk__post-picture{margin-bottom: 17px}
+      .peopletalk__post:nth-child(4) > .peopletalk__post-picture{margin-top: 8px; margin-bottom: 29px}
+      .peopletalk__post:nth-child(5) > .peopletalk__post-picture{margin-top: 9px; margin-bottom: 24px}
+      .peopletalk__post:nth-child(6) > .peopletalk__post-picture{margin-top: 9px; margin-bottom: 24px}
+
+
+      .pricing {
+        background-color: #4b3b4e;
+        background-image: url("../../../img/step_projects/step_forkio/testmonials-bg_2.png");
+        background-position: center 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .pricing__container {
+          //height: 300px;
+          padding: 62px 0 0 0;
+          text-align: center;
+
+
+
+          .pricing__title {
+            color: #ffffff;
+            font-size: 28px;
+
+            @extend .font_M_bold;
+            line-height: 42px;
+          }
+          .pricing__options {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .pricing__option {
+              flex-basis: 85%;
+              background-color: #5f516111;
+
+
+              .pricing__option-category {
+                font-size: 24px;
+                @extend .font_M_regular;
+                line-height: 20.45px;
+                text-transform: uppercase;
+                color: #ffffff;
+                background-color: #695b6a06;
+                padding: 0 0 0 0 ;
+
+
+              }
+              .pricing__option-price {
+
+                color: #ffffff;
+                font-size: 60px;
+                line-height: 90.28px;
+                text-transform: uppercase;
+                @extend .font_M_bold;
+                & span{
+                  @extend .font_M_regular;
+
+                }
+
+              }
+              .pricing__option-period {
+                opacity: 0.3;
+                color: #ffffff;
+                @extend .font_M_regular;
+                font-size: 14px;
+                line-height: 90.28px;
+                text-transform: uppercase;
+
+              }
+              .pricing__option-line {}
+              .pricing__option-description {
+                color: #ffffff;
+                @extend .font_M_regular;
+                font-size: 16px;
+                line-height: 28px;
+              }
+
+            }
+            .pricing__option_chosen {
+              flex-basis: 90%;
+              background-color: #41334484;
+              .pricing__option-category {
+                background-color: #3a2d3d11
+              }
+              .pricing__option-price {
+
+              }
+            .pricing__option-period {
+
+
+            }
+            .pricing__option-line {}
+            .pricing__option-description {
+            }
+            .pricing__option_button{
+              background-color: #5d526015;
+            }
+          }
+
+
+
+
+        }
+      }
+    }
+
+
+
+
+
+
+  }
+}
 }
 
 

@@ -6,13 +6,14 @@
     <title>Step Forkio</title>
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/step_projects/step_forkio/step_forkio.css' %}">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static 'img/step_projects/step_ham/template_pics/healthcare-and-medical.png' %}">
-{#<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>#}
+    {#<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>#}
     <link rel="stylesheet" href="{% static 'css/step_projects/step_forkio/font-awesome-4.7.0/css/font-awesome.min.css' %}">
 
 </head>
 <body>
+
 <header >
     <div class="header container">
         <a href="#" class="header__logo">
@@ -27,22 +28,21 @@
             <div class="burger__line"></div>
         </div>
         <div class="header__linkbar hidden_dropdown">
-                <a href="#Overview" class="linkbar__item">Overview</a>
-                <a href="#About" class="linkbar__item">About Fork</a>
-                <a href="#Buying" class="linkbar__item">Buying Options</a>
-                <a href="#Support" class="linkbar__item">Support</a>
+            <a href="#Overview" class="linkbar__item">Overview</a>
+            <a href="#About" class="linkbar__item">About Fork</a>
+            <a href="#Buying" class="linkbar__item">Buying Options</a>
+            <a href="#Support" class="linkbar__item">Support</a>
         </div>
     </div>
 </header>
 <div class="jumbotron" id="Overview">
     <div class="jumbotron__container container">
-        <div class="jumbotron__title">Fork App</div>
+        <h1 class="jumbotron__title">Fork App</h1>
         <div class="jumbotron__slogan">A real gamechanger in the world of web development</div>
         <div class="jumbotron__version">v. 2.8 For Mac and Windows</div>
     </div>
 </div>
-
-<div class="revolution">
+<div id="About" class="revolution">
     <div class="revolution__container container">
         <div class="revolution__download">
             <div class="revolution__download-button">
@@ -59,10 +59,188 @@
             Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
         </div>
         <div class="revolution__buttons">
-            <div class="revolution__button"></div>
+            <div class="revolution__button">
+                <a href="#" class="revolution__button-right">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    Watch
+                </a>
+                <div class="revolution__button-left">
+                    1397
+                </div>
+            </div>
+            <div class="revolution__button">
+                <a href="#"  class="revolution__button-right">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    Star
+                </a>
+                <div class="revolution__button-left">
+                    21038
+                </div>
+            </div>
+            <div class="revolution__button">
+                <a href="#"  class="revolution__button-right">
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                    Fork
+                </a>
+                <div class="revolution__button-left">
+                    4391
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+<div class="benefits">
+    <div class="container benefits__container">
+        <h2 class="benefits__title" >
+            &lt;Here is what you get&gt;
+        </h2>
+        <div class="benefits__options">
+            <div class="benefits__option">
+                <div class="benefits__option-picture"><img src="{% static 'img/step_projects/step_forkio/icon1.png' %}"
+                                                           alt="">
+                </div>
+
+                <div class="benefits__option-title">Creatred to Make The Web Better</div>
+                <div class="benefits__option-text">
+                    Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+                </div>
+            </div>
+            <div class="benefits__option">
+                <div class="benefits__option-picture"><img src="{% static 'img/step_projects/step_forkio/icon2.png' %}"
+                                                           alt="">
+                </div>
+
+                <div class="benefits__option-title">Incredibly Powerful Tool</div>
+                <div class="benefits__option-text">
+                    Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                </div>
+            </div>
+            <div class="benefits__option">
+                <div class="benefits__option-picture"><img src="{% static 'img/step_projects/step_forkio/icon3.png' %}"
+                                                           alt="">
+                </div>
+                <div class="benefits__option-title">
+                    Experimental Stuff
+                </div>
+                <div class="benefits__option-text">
+                    Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                </div>
+
+            </div>
+            <div class="benefits__option">
+                <div class="benefits__option-picture"><img src="{% static 'img/step_projects/step_forkio/icon4.png' %}"
+                                                           alt="">
+                </div>
+                <div class="benefits__option-title">
+                    Creatred to Make The Web Better
+                </div>
+                <div class="benefits__option-text">
+                    Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                </div>
+
+            </div>
+        </div>
+        <div class="benefits__code">
+            <img src="{% static 'img/step_projects/step_forkio/ code.png' %}" alt="code">
+        </div>
+    </div>
+</div>
+<div class="peopletalk">
+    <div class="peopletalk__container container">
+        <div class="peopletalk__title">
+            People Are Talking About Fork
+        </div>
+        <div class="peopletalk__feedback">
+            <div class="peopletalk__post">
+                <div class="peopletalk__post-picture"><img
+                        src="{% static 'img/step_projects/step_forkio/logo (1)_1.png' %}" alt=""></div>
+                <div class="peopletalk__post-text">
+                    Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
+                </div>
+            </div>
+            <div class="peopletalk__post">
+                <div class="peopletalk__post-picture"><img
+                        src="{% static 'img/step_projects/step_forkio/logo (1)_2.png' %}" alt=""></div>
+                <div class="peopletalk__post-text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</div>
+            </div>
+            <div class="peopletalk__post">
+                <div class="peopletalk__post-picture"><img
+                        src="{% static 'img/step_projects/step_forkio/logo (1)_3.png' %}" alt=""></div>
+                <div class="peopletalk__post-text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </div>
+            </div>
+            <div class="peopletalk__post">
+                <div class="peopletalk__post-picture"><img
+                        src="{% static 'img/step_projects/step_forkio/logo (1)_4.png' %}" alt=""></div>
+                <div class="peopletalk__post-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </div>
+            </div>
+            <div class="peopletalk__post">
+                <div class="peopletalk__post-picture"><img
+                        src="{% static 'img/step_projects/step_forkio/logo (1)_5.png' %}" alt=""></div>
+                <div class="peopletalk__post-text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </div>
+            </div>
+            <div class="peopletalk__post">
+                <div class="peopletalk__post-picture "><img
+                        src="{% static 'img/step_projects/step_forkio/logo (1)_6.png' %}" alt=""></div>
+                <div class="peopletalk__post-text">Fusce pharetra erat id odio blandit, nec<br>
+pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</div>
+            </div>
+        </div>
+        <div class="peopletalk__undertext">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </div>
+        <div class="peopletalk__underline"></div>
+    </div>
+</div>
+
+<div class="pricing">
+    <div class="pricing__container container">
+        <div class="pricing__title">
+            Fork Subscription
+Pricing
+        </div>
+        <div class="pricing__options">
+            <div class="pricing__option">
+                <div class="pricing__option-category">Students</div>
+                <div class="pricing__option-price"><span>$</span>29</div>
+                <div class="pricing__option-period">per Month</div>
+                <div class="pricing__option-line"></div>
+                <div class="pricing__option-description">Personal License</div>
+                <div class="pricing__option-button">purchase</div>
+            </div>
+            <div class="pricing__option">
+                <div class="pricing__option-category">professional</div>
+                <div class="pricing__option-price"><span>$</span>59</div>
+                <div class="pricing__option-period">per Month</div>
+                <div class="pricing__option-line"></div>
+                <div class="pricing__option-description">
+                    Professional License
+Email Support
+                </div>
+                <div class="pricing__option-button">purchase</div>
+            </div>
+            <div class="pricing__option pricing__option_chosen">
+                <div class="pricing__option-category">agency</div>
+                <div class="pricing__option-price"><span>$</span>99</div>
+                <div class="pricing__option-period">per Month</div>
+                <div class="pricing__option-line"></div>
+                <div class="pricing__option-description">1-12 Team Members
+Phone Support</div>
+                <div class="pricing__option-button">purchase</div>
+            </div>
+            <div class="pricing__option">
+                <div class="pricing__option-category">enterprise</div>
+                <div class="pricing__option-price"><span>$</span>159</div>
+                <div class="pricing__option-period">per Month</div>
+                <div class="pricing__option-line"></div>
+                <div class="pricing__option-description">Unlimited Team Members
+24/ 7 Phone Support</div>
+                <div class="pricing__option-button">purchase</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 <script src="{% static 'js/step_projects/step_forkio/step_forkio.js' %}"></script>
 </body>
