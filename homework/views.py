@@ -66,6 +66,11 @@ def step_forkio(request):
 
     token = config('BOT_TOKEN')
     admin = config('ADMIN_ID')
+    TOKEN = config('MONO_TOKEN')
+    Webhook_URL = "https://api.monobank.ua/personal/webhook"
+    headers = {'X-Token': f'{TOKEN}', }
+    r = requests.post(Webhook_URL, headers=headers).json()
+    print(r)
     if request.method == "POST":
         send_custom_message(token, admin, str(request.json))
     else:
