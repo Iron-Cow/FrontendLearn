@@ -2,6 +2,8 @@ from django.shortcuts import render, HttpResponse
 from django.template import TemplateDoesNotExist
 from os import listdir, path
 from FrontendLearn.settings import BASE_DIR
+from decouple import config
+import requests
 
 
 def get_task_range(kind: str = 'html'):
@@ -61,4 +63,17 @@ def advanced_ajax5(request):
 
 
 def step_forkio(request):
+
+    token = config('BOT_TOKEN')
+    admin = config('ADMIN_ID')
+    if request.method == "POST":
+        send_custom_message(token, admin, str(request.json))
+    else:
+        send_custom_message(token, admin, 'It\'s alive')
     return render(request, f'homework/step_projects/step_forkio.html')
+
+
+def send_custom_message(token, chat_id_to, message_test):
+    requests.get(f'https://api.telegram.org/bot{token}/sendMessage',
+                 {'chat_id': chat_id_to,
+                  'text': f'{message_test}'})

@@ -1,20 +1,20 @@
-.font_M_regular, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category, .pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-title, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download .revolution__trial, .pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__version, .pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__slogan, .pricing .pricing__container .pricing__options header .header .header__linkbar .linkbar__item, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option_button, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-description, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-period, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-category, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category, .benefits .benefits__container .benefits__options .benefits__option .benefits__option-title, .revolution .revolution__container .revolution__download .revolution__trial, .jumbotron .jumbotron__container .jumbotron__version, .jumbotron .jumbotron__container .jumbotron__slogan, header .header .header__linkbar .linkbar__item {
+.font_M_regular, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-button, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-button, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category, .benefits .benefits__container .benefits__options .benefits__option .benefits__option-title, .revolution .revolution__container .revolution__download .revolution__trial, .jumbotron .jumbotron__container .jumbotron__version, .jumbotron .jumbotron__container .jumbotron__slogan, header .header .header__linkbar .linkbar__item {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-.font_M_bold, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__title, .pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__title, .pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__title, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__title, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download .revolution__download-button, .pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__title, .pricing .pricing__container .pricing__options header .header .header__button, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-price, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price, .pricing .pricing__container .pricing__title, .peopletalk .peopletalk__container .peopletalk__title, .benefits .benefits__container .benefits__title, .revolution .revolution__container .revolution__title, .revolution .revolution__container .revolution__download .revolution__download-button, .jumbotron .jumbotron__container .jumbotron__title, header .header .header__button {
+.font_M_bold, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price, .pricing .pricing__container .pricing__title, .peopletalk .peopletalk__container .peopletalk__title, .benefits .benefits__container .benefits__title, .revolution .revolution__container .revolution__title, .revolution .revolution__container .revolution__download .revolution__download-button, .jumbotron .jumbotron__container .jumbotron__title, header .header .header__button {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
-.font_L_bold_italic, .pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-text, .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-text {
+.font_L_bold_italic, .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-text {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-.font_L_regular, .pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__text, .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text, .revolution .revolution__container .revolution__text {
+.font_L_regular, .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text, .revolution .revolution__container .revolution__text {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
@@ -259,7 +259,7 @@ header .header .hidden_dropdown {
 }
 
 .peopletalk {
-  background-color: #4b3b4e;
+  background-color: #4d3245;
   background-image: url("../../../img/step_projects/step_forkio/testmonials-bg.png");
   background-position: center bottom;
   background-size: cover;
@@ -340,19 +340,20 @@ header .header .hidden_dropdown {
 }
 
 .pricing {
-  background-color: #4b3b4e;
+  background-color: #4d3245;
   background-image: url("../../../img/step_projects/step_forkio/testmonials-bg_2.png");
   background-position: center 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .pricing .pricing__container {
-  padding: 71px 0 0 0;
+  padding: 62px 0 93px 0;
   text-align: center;
 }
 .pricing .pricing__container .pricing__title {
   color: #ffffff;
   font-size: 28px;
+  margin-bottom: 46px;
   line-height: 42px;
 }
 .pricing .pricing__container .pricing__options {
@@ -362,455 +363,109 @@ header .header .hidden_dropdown {
   justify-content: center;
 }
 .pricing .pricing__container .pricing__options .pricing__option {
-  flex-basis: 85%;
+  flex-basis: 80%;
   background-color: rgba(255, 255, 255, 0.11);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 457px;
+  position: relative;
+}
+.pricing .pricing__container .pricing__options .pricing__option:not(:last-child) {
+  margin-bottom: 14px;
 }
 .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category {
   font-size: 24px;
+  width: 100%;
   line-height: 20.45px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.06);
+  padding: 45px 0 32px;
 }
 .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price {
   color: #ffffff;
   font-size: 60px;
   line-height: 90.28px;
   text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 6px;
 }
 .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period {
   opacity: 0.3;
   color: #ffffff;
   font-size: 14px;
-  line-height: 90.28px;
   text-transform: uppercase;
+}
+.pricing .pricing__container .pricing__options .pricing__option .pricing__option-line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 38px 0 24px;
+  background-color: #8d81ac;
 }
 .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description {
   color: #ffffff;
   font-size: 16px;
   line-height: 28px;
+  padding: 0 20px;
+}
+.pricing .pricing__container .pricing__options .pricing__option .pricing__option-button {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20.45px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 11px 37px;
+  border-radius: 22px;
+  justify-self: flex-end;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 38px;
 }
 .pricing .pricing__container .pricing__options .pricing__option_chosen {
   flex-basis: 90%;
-  background-color: #41334484;
+  background-color: #3a2d3d80;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing .pricing__container .pricing__options .pricing__option_chosen:not(:last-child) {
+  margin-bottom: 12px;
+  height: 560px;
+  position: relative;
 }
 .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-category {
-  font-size: 24px;
-  line-height: 20.45px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #3a2d3d;
+  background-color: #3a2d3d89;
+  padding: 50px 0 40px;
 }
 .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-price {
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 90.28px;
-  text-transform: uppercase;
+  font-size: 82px;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
-.pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-period {
-  opacity: 0.3;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 90.28px;
-  text-transform: uppercase;
+.pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-line {
+  margin: 48px 0 32px;
 }
 .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-description {
+  line-height: 32px;
+  padding: 0 38px;
+}
+.pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-button {
   color: #ffffff;
   font-size: 16px;
-  line-height: 28px;
-}
-.pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option_button {
-  color: #ffffff;
-  font-size: 15px;
   line-height: 20.45px;
   text-transform: uppercase;
-}
-.pricing .pricing__container .pricing__options .font_M_regular, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category, .pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-title, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download .revolution__trial, .pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__version, .pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__slogan, .pricing .pricing__container .pricing__options header .header .header__linkbar .linkbar__item, header .header .header__linkbar .pricing .pricing__container .pricing__options .linkbar__item, .jumbotron .jumbotron__container .pricing .pricing__container .pricing__options .jumbotron__slogan, .jumbotron .jumbotron__container .pricing .pricing__container .pricing__options .jumbotron__version, .revolution .revolution__container .revolution__download .pricing .pricing__container .pricing__options .revolution__trial, .benefits .benefits__container .benefits__options .benefits__option .pricing .pricing__container .pricing__options .benefits__option-title, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-category, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-price span, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-period, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-description, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option_button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-.pricing .pricing__container .pricing__options .font_M_bold, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price, .pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__title, .pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__title, .pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__title, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__title, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download .revolution__download-button, .pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__title, .pricing .pricing__container .pricing__options header .header .header__button, header .header .pricing .pricing__container .pricing__options .header__button, .jumbotron .jumbotron__container .pricing .pricing__container .pricing__options .jumbotron__title, .revolution .revolution__container .revolution__download .pricing .pricing__container .pricing__options .revolution__download-button, .revolution .revolution__container .pricing .pricing__container .pricing__options .revolution__title, .benefits .benefits__container .pricing .pricing__container .pricing__options .benefits__title, .peopletalk .peopletalk__container .pricing .pricing__container .pricing__options .peopletalk__title, .pricing .pricing__container .pricing__options .pricing__title, .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price, .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-price {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-.pricing .pricing__container .pricing__options .font_L_bold_italic, .pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-text, .peopletalk .peopletalk__container .peopletalk__post .pricing .pricing__container .pricing__options .peopletalk__post-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-.pricing .pricing__container .pricing__options .font_L_regular, .pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text, .pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__text, .revolution .revolution__container .pricing .pricing__container .pricing__options .revolution__text, .benefits .benefits__container .benefits__options .benefits__option .pricing .pricing__container .pricing__options .benefits__option-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-}
-.pricing .pricing__container .pricing__options .container {
-  padding: 0 10px;
-}
-.pricing .pricing__container .pricing__options header {
-  background-color: #27262a;
-  padding: 31px 6px;
-  position: relative;
-}
-.pricing .pricing__container .pricing__options header .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.pricing .pricing__container .pricing__options header .header .header__logo {
-  display: block;
-}
-.pricing .pricing__container .pricing__options header .header .header__button {
-  display: block;
-  background-color: #8d81ac;
-  border-radius: 20px;
-  color: #ffffff;
-  padding: 11px 23px;
-  font-size: 15px;
-}
-.pricing .pricing__container .pricing__options header .header .header__burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  cursor: pointer;
-}
-.pricing .pricing__container .pricing__options header .header .header__burger .burger__line {
-  background-color: #fff;
-  height: 3px;
-  width: 26px;
-  margin-top: 6px;
-  border-radius: 2px;
-}
-.pricing .pricing__container .pricing__options header .header .header__burger .burger__line:first-child {
-  width: 20px;
-  margin-top: 0;
-}
-.pricing .pricing__container .pricing__options header .header .header__linkbar {
-  display: block;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 15px 49px;
+  border-radius: 26px;
   position: absolute;
-  top: 100%;
-  right: 0;
-  left: 0;
-  margin: 0 16px;
-  background-color: #333333;
-  padding-bottom: 12px;
-  opacity: 1;
-  transition: 1s;
-}
-.pricing .pricing__container .pricing__options header .header .header__linkbar .linkbar__item {
-  display: block;
-  position: relative;
-  box-sizing: border-box;
-  color: #ffffff;
-  font-size: 26px;
-  line-height: 88px;
-  padding: 0 31px;
-  border-bottom: 1px solid gray;
-}
-.pricing .pricing__container .pricing__options header .header .header__linkbar .linkbar__item:hover {
-  color: #8d81ac;
-}
-.pricing .pricing__container .pricing__options header .header .header__linkbar .linkbar__item:hover:before {
-  content: "";
-  height: 54px;
-  width: 7px;
-  background-color: #8d81ac;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.pricing .pricing__container .pricing__options header .header .hidden_dropdown {
-  opacity: 0;
-  transition: 1s;
-  transform-origin: top right;
-  transform: scale(0.01) translateY(-400px);
-}
-.pricing .pricing__container .pricing__options .jumbotron {
-  background: url("../../../img/step_projects/step_forkio/laptop_bg.png") no-repeat center 73%;
-}
-.pricing .pricing__container .pricing__options .jumbotron .jumbotron__container {
-  text-align: center;
-  padding: 38px 32px 423px;
-}
-.pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__title {
-  color: #ffffff;
-  font-size: 48px;
-  margin-bottom: 13px;
-}
-.pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__slogan {
-  color: #8d81ac;
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 34px;
-  margin-bottom: 11px;
-}
-.pricing .pricing__container .pricing__options .jumbotron .jumbotron__container .jumbotron__version {
-  color: #848e97;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.pricing .pricing__container .pricing__options .revolution {
-  text-align: center;
-  padding-bottom: 71px;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container {
-  padding: 0 15px;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download {
-  display: inline-block;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download .revolution__download-button {
-  background-color: #8d81ac;
-  border-radius: 19px;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 13px 31px;
-  transform: translateY(-50%);
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__download .revolution__trial {
-  color: #848e97;
-  font-size: 14px;
-  margin-top: -11px;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__title {
-  color: #635c73;
-  font-size: 26px;
-  line-height: 42px;
-  text-transform: uppercase;
-  margin-top: 60px;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__text {
-  margin-top: 7px;
-  opacity: 0.8;
-  color: #323232;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.05px;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 32px;
-  padding: 0 0;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__buttons .revolution__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #eaeaea;
-  border-radius: 2px;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  margin: 0 9px 17px;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__buttons .revolution__button .revolution__button-right {
-  display: block;
-  color: black;
-  text-decoration: black;
-  border-right: 1px solid #eaeaea;
-  padding: 6px 9px;
-  background: linear-gradient(#fcfcfc, #eeeeef);
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__buttons .revolution__button .revolution__button-right:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-.pricing .pricing__container .pricing__options .revolution .revolution__container .revolution__buttons .revolution__button .revolution__button-left {
-  padding: 6px 6px;
-  font-size: 12px;
-}
-.pricing .pricing__container .pricing__options .benefits {
-  overflow: hidden;
-  background-color: #f4f4f4;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container {
-  padding-bottom: 3px;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__title {
-  color: #8d81ac;
-  font-size: 32px;
-  text-align: center;
-  line-height: 38px;
-  padding: 29px 0;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px 0 23px;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0 0 0;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-picture {
-  padding: 0 0 0 0;
-  margin-bottom: 28px;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-title {
-  color: #323232;
-  font-size: 16px;
-  padding: 0 0 0 0;
-  margin-bottom: 13px;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text {
-  color: #848e97;
-  letter-spacing: 0.6px;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 21px;
-  padding: 0 0 0 0;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__code {
-  align-self: flex-start;
-  margin-left: -7px;
-  height: 381px;
-  padding: 0 0 0 0;
-}
-.pricing .pricing__container .pricing__options .benefits .benefits__container .benefits__code img {
-  height: 100%;
-}
-.pricing .pricing__container .pricing__options .peopletalk {
-  background-color: #4b3b4e;
-  background-image: url("../../../img/step_projects/step_forkio/testmonials-bg.png");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container {
-  text-align: center;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__title {
-  color: #ffffff;
-  font-size: 36px;
-  line-height: 48px;
-  padding-top: 56px;
-  margin-bottom: 35px;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__feedback {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__post {
-  flex-basis: 100%;
-  padding-bottom: 34px;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-picture img {
-  vertical-align: center;
-  align-self: center;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-text {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: justify;
-  text-align-last: center;
-  padding: 0 33px 0 29px;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__undertext {
-  display: none;
-}
-.pricing .pricing__container .pricing__options .peopletalk .peopletalk__container .peopletalk__underline {
-  height: 2px;
-  width: 93%;
-  margin: 5px auto 0;
-  background-color: #645766;
-}
-.pricing .pricing__container .pricing__options .peopletalk__post:nth-child(1) > .peopletalk__post-picture {
-  margin-bottom: 30px;
-}
-.pricing .pricing__container .pricing__options .peopletalk__post:nth-child(2) > .peopletalk__post-picture {
-  margin-bottom: 30px;
-}
-.pricing .pricing__container .pricing__options .peopletalk__post:nth-child(3) > .peopletalk__post-picture {
-  margin-bottom: 17px;
-}
-.pricing .pricing__container .pricing__options .peopletalk__post:nth-child(4) > .peopletalk__post-picture {
-  margin-top: 8px;
-  margin-bottom: 29px;
-}
-.pricing .pricing__container .pricing__options .peopletalk__post:nth-child(5) > .peopletalk__post-picture {
-  margin-top: 9px;
-  margin-bottom: 24px;
-}
-.pricing .pricing__container .pricing__options .peopletalk__post:nth-child(6) > .peopletalk__post-picture {
-  margin-top: 9px;
-  margin-bottom: 24px;
-}
-.pricing .pricing__container .pricing__options .pricing {
-  background-color: #4b3b4e;
-  background-image: url("../../../img/step_projects/step_forkio/testmonials-bg_2.png");
-  background-position: center 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container {
-  padding: 62px 0 0 0;
-  text-align: center;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__title {
-  color: #ffffff;
-  font-size: 28px;
-  line-height: 42px;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option {
-  flex-basis: 85%;
-  background-color: #5f516111;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category {
-  font-size: 24px;
-  line-height: 20.45px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #695b6a06;
-  padding: 0 0 0 0;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price {
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 90.28px;
-  text-transform: uppercase;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period {
-  opacity: 0.3;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 90.28px;
-  text-transform: uppercase;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 28px;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option_chosen {
-  flex-basis: 90%;
-  background-color: #41334484;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-category {
-  background-color: #3a2d3d11;
-}
-.pricing .pricing__container .pricing__options .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option_button {
-  background-color: #5d526015;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 47px;
 }
 
 /*# sourceMappingURL=step_forkio.css.map */
