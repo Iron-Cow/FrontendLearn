@@ -14,7 +14,12 @@
   font-style: italic;
 }
 
-.font_L_regular, .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text, .revolution .revolution__container .revolution__text {
+.font_L_bold, header .header .header__logo-name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.font_L_regular, .peopletalk .peopletalk__container .peopletalk__undertext, .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text, .revolution .revolution__container .revolution__text {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
@@ -35,6 +40,14 @@ header .header {
 }
 header .header .header__logo {
   display: block;
+}
+header .header .header__logo-name {
+  font-size: 24px;
+  text-decoration: none;
+  color: #8d81ac;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: none;
 }
 header .header .header__button {
   display: block;
@@ -302,41 +315,40 @@ header .header .hidden_dropdown {
   text-align-last: center;
   padding: 0 33px 0 29px;
 }
+.peopletalk .peopletalk__container .peopletalk__post:nth-child(1) > .peopletalk__post-picture {
+  margin-bottom: 30px;
+}
+.peopletalk .peopletalk__container .peopletalk__post:nth-child(2) > .peopletalk__post-picture {
+  margin-bottom: 30px;
+}
+.peopletalk .peopletalk__container .peopletalk__post:nth-child(3) > .peopletalk__post-picture {
+  margin-bottom: 17px;
+}
+.peopletalk .peopletalk__container .peopletalk__post:nth-child(4) > .peopletalk__post-picture {
+  margin-top: 8px;
+  margin-bottom: 29px;
+}
+.peopletalk .peopletalk__container .peopletalk__post:nth-child(5) > .peopletalk__post-picture {
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+.peopletalk .peopletalk__container .peopletalk__post:nth-child(6) > .peopletalk__post-picture {
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
 .peopletalk .peopletalk__container .peopletalk__undertext {
   display: none;
+  opacity: 0.8;
+  color: #a291a5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 .peopletalk .peopletalk__container .peopletalk__underline {
   height: 2px;
   width: 93%;
   margin: 5px auto 0;
   background-color: #645766;
-}
-
-.peopletalk__post:nth-child(1) > .peopletalk__post-picture {
-  margin-bottom: 30px;
-}
-
-.peopletalk__post:nth-child(2) > .peopletalk__post-picture {
-  margin-bottom: 30px;
-}
-
-.peopletalk__post:nth-child(3) > .peopletalk__post-picture {
-  margin-bottom: 17px;
-}
-
-.peopletalk__post:nth-child(4) > .peopletalk__post-picture {
-  margin-top: 8px;
-  margin-bottom: 29px;
-}
-
-.peopletalk__post:nth-child(5) > .peopletalk__post-picture {
-  margin-top: 9px;
-  margin-bottom: 24px;
-}
-
-.peopletalk__post:nth-child(6) > .peopletalk__post-picture {
-  margin-top: 9px;
-  margin-bottom: 24px;
 }
 
 .pricing {
@@ -412,6 +424,7 @@ header .header .hidden_dropdown {
   padding: 0 20px;
 }
 .pricing .pricing__container .pricing__options .pricing__option .pricing__option-button {
+  cursor: pointer;
   color: #ffffff;
   font-size: 15px;
   line-height: 20.45px;
@@ -466,6 +479,467 @@ header .header .hidden_dropdown {
   left: 50%;
   transform: translateX(-50%);
   bottom: 47px;
+}
+
+@media only screen and (min-width: 481px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  header {
+    background-color: #27262a;
+    padding: 22px 11px;
+    position: relative;
+  }
+  header .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header .header__logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  header .header .header__logo-name {
+    display: inline-block;
+    padding-left: 13px;
+  }
+  header .header .header__button {
+    display: inline-block;
+    background-color: #8d81ac;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 11px 37px;
+    font-size: 15px;
+  }
+  header .header .header__burger {
+    display: none;
+  }
+  header .header .header__burger .burger__line {
+    background-color: #fff;
+    height: 3px;
+    width: 26px;
+    margin-top: 6px;
+    border-radius: 2px;
+  }
+  header .header .header__burger .burger__line:first-child {
+    width: 20px;
+    margin-top: 0;
+  }
+  header .header .hidden_dropdown {
+    display: block;
+    transform: scale(1) translateY(0);
+  }
+  header .header .header__linkbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    flex-basis: 100%;
+    margin: 0 0;
+    background-color: transparent;
+    padding-top: 19px;
+    padding-bottom: 0;
+    opacity: 1;
+    transition: 1s;
+  }
+  header .header .header__linkbar .linkbar__item {
+    display: block;
+    box-sizing: border-box;
+    color: #8d81ac;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 0 24px;
+    border-bottom: 0 solid gray;
+  }
+  header .header .header__linkbar .linkbar__item:hover {
+    color: #8d81ac;
+  }
+  header .header .header__linkbar .linkbar__item:hover:before {
+    content: "";
+    height: 0;
+    width: 0;
+    background-color: #8d81ac;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  .jumbotron {
+    background: url("../../../img/step_projects/step_forkio/laptop_bg.png") no-repeat center 100%;
+  }
+  .jumbotron .jumbotron__container {
+    text-align: center;
+    padding: 40px 32px 483px;
+  }
+  .jumbotron .jumbotron__container .jumbotron__title {
+    color: #ffffff;
+    font-size: 72px;
+    margin-bottom: 29px;
+  }
+  .jumbotron .jumbotron__container .jumbotron__slogan {
+    color: #8d81ac;
+    font-size: 20.7px;
+    text-transform: none;
+    line-height: 20.45px;
+    margin-bottom: 16px;
+  }
+  .jumbotron .jumbotron__container .jumbotron__version {
+    color: #848e97;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.45px;
+    text-transform: uppercase;
+  }
+
+  .revolution {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .revolution .revolution__container {
+    padding: 0 15px;
+  }
+  .revolution .revolution__container .revolution__download {
+    display: inline-block;
+  }
+  .revolution .revolution__container .revolution__download .revolution__download-button {
+    background-color: #8d81ac;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 21px 62px;
+    transform: translateY(-50%);
+  }
+  .revolution .revolution__container .revolution__download .revolution__trial {
+    color: #848e97;
+    font-size: 14px;
+    margin-top: -16px;
+  }
+  .revolution .revolution__container .revolution__title {
+    color: #635c73;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-top: 89px;
+  }
+  .revolution .revolution__container .revolution__text {
+    margin-top: 22px;
+    opacity: 0.8;
+    color: #323232;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.07px;
+  }
+  .revolution .revolution__container .revolution__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 0 0;
+  }
+  .revolution .revolution__container .revolution__buttons .revolution__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 5px 17px;
+  }
+  .revolution .revolution__container .revolution__buttons .revolution__button .revolution__button-right {
+    display: block;
+    color: black;
+    text-decoration: black;
+    border-right: 1px solid #eaeaea;
+    padding: 6px 9px;
+    background: linear-gradient(#fcfcfc, #eeeeef);
+  }
+  .revolution .revolution__container .revolution__buttons .revolution__button .revolution__button-right:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .revolution .revolution__container .revolution__buttons .revolution__button .revolution__button-left {
+    padding: 6px 6px;
+    font-size: 12px;
+  }
+
+  .benefits {
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+  .benefits .benefits__container {
+    padding-bottom: 22px;
+  }
+  .benefits .benefits__container .benefits__title {
+    color: #8d81ac;
+    font-size: 42px;
+    line-height: 20.45px;
+    text-align: center;
+    padding: 62px 0;
+  }
+  .benefits .benefits__container .benefits__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 43px 42px 19px;
+  }
+  .benefits .benefits__container .benefits__options .benefits__option {
+    text-align: left;
+    display: block;
+    padding: 0 0 0 0;
+  }
+  .benefits .benefits__container .benefits__options .benefits__option .benefits__option-picture {
+    padding: 0 0 0 0;
+    margin-bottom: 28px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    margin-right: 23px;
+  }
+  .benefits .benefits__container .benefits__options .benefits__option .benefits__option-title {
+    color: #323232;
+    font-size: 16px;
+    padding: 0 0 0 0;
+    margin-bottom: 13px;
+  }
+  .benefits .benefits__container .benefits__options .benefits__option .benefits__option-text {
+    color: #848e97;
+    letter-spacing: 0.6px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 0 0 0;
+  }
+  .benefits .benefits__container .benefits__options .benefits__option:last-child .benefits__option-text {
+    margin-bottom: 0;
+  }
+  .benefits .benefits__container .benefits__code {
+    align-self: flex-start;
+    margin-left: 0;
+    height: 519px;
+    padding: 0 0 0 0;
+  }
+  .benefits .benefits__container .benefits__code img {
+    height: 100%;
+  }
+
+  .peopletalk {
+    background-color: #4d3245;
+    background-image: url("../../../img/step_projects/step_forkio/testmonials-bg.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .peopletalk .peopletalk__container {
+    text-align: center;
+  }
+  .peopletalk .peopletalk__container .peopletalk__title {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 48px;
+    padding-top: 74px;
+    margin-bottom: 93px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post {
+    flex-basis: 43%;
+    padding-bottom: 50px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post:nth-child(1) > .peopletalk__post-picture {
+    margin-bottom: 33px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post:nth-child(2) > .peopletalk__post-picture {
+    margin-bottom: 26px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post:nth-child(3) > .peopletalk__post-picture {
+    margin-bottom: 20px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post:nth-child(4) > .peopletalk__post-picture {
+    margin-top: 27px;
+    margin-bottom: 31px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post:nth-child(5) > .peopletalk__post-picture {
+    margin-top: 2px;
+    margin-bottom: 27px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post:nth-child(6) > .peopletalk__post-picture {
+    margin-top: 0px;
+    margin-bottom: 23px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-picture img {
+    vertical-align: center;
+    align-self: center;
+  }
+  .peopletalk .peopletalk__container .peopletalk__post .peopletalk__post-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    text-align-last: center;
+    padding: 0 0 0 0;
+  }
+  .peopletalk .peopletalk__container .peopletalk__undertext {
+    display: block;
+    text-align: center;
+    padding: 0 40px;
+  }
+  .peopletalk .peopletalk__container .peopletalk__underline {
+    height: 2px;
+    width: 93%;
+    margin: 16px auto 0;
+    background-color: #645766;
+  }
+
+  .pricing {
+    background-color: #4d3245;
+    background-image: url("../../../img/step_projects/step_forkio/testmonials-bg_2.png");
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .pricing .pricing__container {
+    padding: 76px 0 71px 0;
+    text-align: center;
+  }
+  .pricing .pricing__container .pricing__title {
+    color: #ffffff;
+    margin-bottom: 52px;
+    font-size: 42px;
+  }
+  .pricing .pricing__container .pricing__options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option {
+    flex-basis: 34%;
+    background-color: rgba(255, 255, 255, 0.11);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 457px;
+    position: relative;
+    margin: 0 18px 0;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option:not(:last-child) {
+    margin-bottom: 41px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option:last-child {
+    margin: -14px 30px 0 -9px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option .pricing__option-category {
+    font-size: 24px;
+    width: 100%;
+    line-height: 20.45px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 45px 0 32px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option .pricing__option-price {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 90.28px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option .pricing__option-period {
+    opacity: 0.3;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option .pricing__option-line {
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 38px 0 24px;
+    background-color: #8d81ac;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option .pricing__option-description {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 25px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option .pricing__option-button {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20.45px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 11px 37px;
+    border-radius: 22px;
+    justify-self: flex-end;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 38px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen {
+    flex-basis: 39%;
+    background-color: #3a2d3d80;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen:not(:last-child) {
+    margin-bottom: 12px;
+    height: 560px;
+    position: relative;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-category {
+    background-color: #3a2d3d89;
+    padding: 50px 0 40px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-price {
+    font-size: 82px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-line {
+    margin: 48px 0 32px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-description {
+    line-height: 32px;
+    padding: 0 46px;
+  }
+  .pricing .pricing__container .pricing__options .pricing__option_chosen .pricing__option-button {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20.45px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 15px 49px;
+    border-radius: 26px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 47px;
+  }
 }
 
 /*# sourceMappingURL=step_forkio.css.map */
