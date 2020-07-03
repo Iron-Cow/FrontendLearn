@@ -2,8 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.template import TemplateDoesNotExist
 from os import listdir, path
 from FrontendLearn.settings import BASE_DIR
-from decouple import config
-import requests
+
 
 
 def get_task_range(kind: str = 'html'):
