@@ -64,6 +64,9 @@ def advanced_ajax5(request):
 def step_forkio(request):
     return render(request, f'homework/step_projects/step_forkio.html')
 
+def step_oop(request):
+    return render(request, f'homework/step_projects/step_oop.html')
+
 
 def send_custom_message(token, chat_id_to, message_test):
     requests.get(f'https://api.telegram.org/bot{token}/sendMessage',

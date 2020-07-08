@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/step_projects/step_oop/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/step_projects/step_oop/reset.css' %}">
+    <link rel="icon" href="{% static 'img/step_projects/step_oop/doctor.svg' %}">
+
+
+    <title>Clinic</title>
+</head>
+<body>
+<div class="container_big container">
+    <div class="navigation">
+        <div class="navigation__item navigation__logo">
+            <img src="{% static 'img/step_projects/step_oop/doctor.svg' %}" alt="">
+        </div>
+        <div class="navigation__item navigation__slogan">Clinic</div>
+        <a href="#popup_visit" class="navigation__item navigation__button-create">
+            Create Visit
+        </a>
+    </div>
+    <div class="table">
+    </div>
+
+
+
+    <div id="popup_visit" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <div class="popup__title">Create Visit</div>
+                <label for="popup__dropdown"></label>
+                <select name="popup__dropdown" class="popup__dropdown" id="popup__dropdown">
+                    <option class="popup__dropdown-option" value="">-----</option>
+                </select>
+                <div class="pupup__submit">
+                    Create
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
+<script src="{% static 'js/step_projects/step_oop/main.js' %}"></script>
+</body>
+</html>

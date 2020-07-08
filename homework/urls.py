@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import index, html_task, js_task, step_ham, advanced_html1, advanced_js1, advanced_js2, advanced_js3, \
-    advanced_ajax4, advanced_ajax5, step_forkio
+    advanced_ajax4, advanced_ajax5, step_forkio, step_oop
 
 
 urlpatterns = [
@@ -15,5 +15,6 @@ urlpatterns = [
     path('advanced/ajax4', advanced_ajax4, name='advanced_ajax4'),
     path('advanced/ajax5', advanced_ajax5, name='advanced_ajax5'),
     path('step/step_forkio', step_forkio, name='step_forkio'),
+    path('step/step_oop', step_oop, name='step_oop'),
 
 ]
